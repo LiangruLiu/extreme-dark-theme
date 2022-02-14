@@ -251,12 +251,12 @@
 	"focusBorder": "#ffd000a2", //I_0 or 透明蓝色
 	"foreground": "#ffffff", //4.1_1 欢迎界面，设置，左侧列表的部分文字，标签栏右侧按钮，等等
 	// 源代码管理
-	"gitDecoration.addedResourceForeground": "#4c49f1", //UNKWN
+	"gitDecoration.addedResourceForeground": "#a2b89c", //G git A标记和该项文字的颜色 直接建立新远程仓库并上传当前文件夹
 	"gitDecoration.conflictingResourceForeground": "#ff566c", //E.1 git !标记和该项文字的颜色。冲突可通过github和本地修改同一行产生
 	"gitDecoration.deletedResourceForeground": "#ec7f77", //G git D标记和该项文字的颜色
 	"gitDecoration.ignoredResourceForeground": "#6a7f94", //G git gitignore涉及的文件名颜色
 	"gitDecoration.modifiedResourceForeground": "#c5ac59", //G git M标记和该项文字的颜色
-	"gitDecoration.renamedResourceForeground": "#5aafc0", //G git R标记和该项文字的颜色 git mv 命令 移动或重命名
+	"gitDecoration.renamedResourceForeground": "#5aafc0", //G git R标记和该项文字的颜色 用“git mv”命令移动或重命名
 	"gitDecoration.stageDeletedResourceForeground": "#ea9a50", //UNKWN
 	"gitDecoration.stageModifiedResourceForeground": "#9a5ce7", //UNKWN
 	"gitDecoration.submoduleResourceForeground": "#00c77b", //UNKWN
