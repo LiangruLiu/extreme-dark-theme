@@ -1,0 +1,258 @@
+// 20210624
+{
+"$schema": "vscode://schemas/color-theme",
+"tokenColors": [
+	//fontStyle:bold,italic,underline
+	//comment
+	{
+		"name": "comment",
+		"scope": "comment",
+		"settings": {"foreground": "#666666"}
+	},
+	{
+		"name": "//",
+		"scope": "punctuation.definition.comment",
+		"settings": {"foreground": "#bababa"}
+	},
+	//constant
+	{
+		"name": "constant",
+		"scope": "constant.numeric",
+		"settings": {"foreground": "#fd7272"}
+	},
+	{
+		"name": "booleans and null values |true,false,null",
+		"scope": "constant.language",
+		"settings": {"foreground": "#ff7272"}
+	},
+	{
+		"name": " |\n",
+		"scope": "constant.character.escape",
+		"settings": {"foreground": "#eea777"}
+	},
+	{
+		"name": " |%d",
+		"scope": "constant.other.placeholder",
+		"settings": {"foreground": "#e4e47d"}
+	},
+	//entity
+	{
+		"name": "entity name |struct 'cplx'",
+		"scope": "entity.name.type",
+		"settings": {"foreground": "#aec265"}
+	},
+	{
+		"name": "???",
+		"scope": "entity.name.struct",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": "function name |void 'fun'(), define 'PI'",
+		"scope": "entity.name.function",
+		"settings": {"foreground": "#78bdfd"}
+	},
+	{
+		"name": "???",
+		"scope": "entity.name.struct.forward-decl",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": "namespace name |using namespace 'std'",
+		"scope": "entity.name.namespace",
+		"settings": {"foreground": "#c9c239"}
+	},
+	{
+		"name": "???",
+		"scope": "entity.name.constant",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": " |goto 'A'",
+		"scope": "entity.name.label",
+		"settings": {"foreground": "#fd7272"}
+	},
+	//invalid
+	{
+		"name": "invalid",
+		"scope": "invalid.illegal",
+		"settings": {"foreground": "#ffffff"}
+	},
+	// keyword
+	{
+		"name": " |using,typedef",
+		"scope": "keyword",
+		"settings": {"foreground": "#6edfd5"}
+	},
+	{
+		"name": " |#include,#define,return,while,for,if,switch,goto",
+		"scope": "keyword.control",
+		"settings": {"foreground": "#dac15f"}
+	},
+	{
+		"name": "???",
+		"scope": "keyword.control.conditional",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": "operator",
+		"scope": "keyword.operator",
+		"settings": {"foreground": "#cf8be6"}
+	},
+	{
+		"name": "assignment operator |=",
+		"scope": "keyword.operator.assignment",
+		"settings": {"foreground": "#dac15f"}
+	},
+	{
+		"name": "???",
+		"scope": "keyword.operator.arithmetic",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": "???",
+		"scope": "keyword.operator.bitwise",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": "logical operator |&&",
+		"scope": "keyword.operator.logical",
+		"settings": {"foreground": "#dac15f"}
+	},
+	// markup
+	// meta
+	{
+		"name": "???",
+		"scope": "meta.struct",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": "null, (..) after fun,main,scanf,putchar, [..]after array",
+		"scope": "meta.function",
+		"settings": {"foreground": "#d8d8d8"}//78bdfd
+	},
+	{
+		"name": "|#define LOOP'(i,n)'",
+		"scope": "meta.preprocessor",
+		"settings": {"foreground": "#7ab867"}
+	},
+	{
+		"name": "{}",
+		"scope": "punctuation.section.block",
+		"settings": {"foreground": "#808080"}
+	},
+	{
+		"name": " |() after while,for,if,switch, () in equation",
+		"scope": "punctuation.section.parens",
+		"settings": {"foreground": "#dac15f"}
+	},
+	// {
+	// 	"name": "search editor",
+	// 	"scope": "meta.path.basename.search",
+	// 	"settings": {"foreground": "#dac15f"}
+	// },
+	// punctuation
+	{
+		"name": "separator |,.:",
+		"scope": "punctuation.separator",
+		"settings": {"foreground": "#eaeaea"}
+	},
+	{
+		"name": "terminator |;",
+		"scope": "punctuation.terminator",
+		"settings": {"foreground": "#ffffff"}
+	},
+	{
+		"name": "???accessor |.->::",
+		"scope": "punctuation.accessor",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	// source
+	{
+		"name": "global variable in .ano",
+		"scope": "source.cpp.arduino",
+		"settings": {"foreground": "#d8d8d8"}
+	},
+	// storage
+	{
+		"name": "type of data |int",
+		"scope": "storage.type",
+		"settings": {"foreground": "#7ab867"}
+	},
+	{
+		"name": " |static,inline,const,public,private",
+		"scope": "storage.modifier",
+		"settings": {"foreground": "#c9c239",
+			"fontStyle": "bold"}
+	},
+	{
+		"name": "???",
+		"scope": "storage.type.function",
+		"settings": {"foreground": "#ff00dd"}
+	},
+	{
+		"name": " |class,struct,enum,union",
+		"scope": [
+			"storage.type.class",
+			"storage.type.struct",
+			"storage.type.enum",
+			"storage.type.union"
+		],
+		"settings": {"foreground": "#c9c239"}
+	},
+	// string
+	{
+		"name": "key string in json",
+		"scope": "string.json",
+		"settings": {"foreground": "#78bdfd"}
+	},
+	{
+		"name": "value string in json",
+		"scope": "string.quoted.double.json",
+		"settings": {"foreground": "#d6d6d6"}
+	},
+	{
+		"name": "char",
+		"scope": "string.quoted.single",
+		"settings": {"foreground": "#fd7272"}
+	},
+	{
+		"name": "string",
+		"scope": "string.quoted.double",
+		"settings": {"foreground": "#efc48c"}
+	},
+	{
+		"name": " |include <'iostream'>",
+		"scope": "string.quoted.other",
+		"settings": {"foreground": "#d8d8d8"}
+	},
+	{
+		"name": "quotes",
+		"scope": "punctuation.definition.string",
+		"settings": {"foreground": "#c7c7c7"}
+	},
+	// support
+	// text
+	{
+		"name": "markdown",
+		"scope": "text",
+		"settings": {"foreground": "#e0e0e0"}
+	},
+	// variable
+	{
+		"name": "variable",
+		"scope": [
+			"variable.other",
+			// "variable.other.readwrite",
+			// "punctuation.definition.variable",
+			// "variable.other.constant",
+			// "variable.language",
+			// "variable.parameter",
+			// "variable.other.member",
+			// "variable.function",
+			// "variable.annotation",
+			// "punctuation.definition.annotation"
+		],
+		"settings": {"foreground": "#d8d8d8"}
+	}
+]
+}

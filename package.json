@@ -1,0 +1,27 @@
+{
+	"name": "extreme-dark-theme",
+	"displayName": "Extreme Dark Theme",
+	"description": "A dark theme for VS Code made by LLR",
+	"categories": ["Themes"],
+	"keywords": ["vscode", "theme", "dark", "night", "black", "high-contrast", "AMOLED"],
+	"publisher": "liangruliu",
+	"icon": "images/icon.png",
+	"version": "0.5.13",
+	"engines": {
+		"vscode": "^1.56.0"
+	},
+	"contributes": {
+		"themes": [
+			{
+				"label": "Extreme Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/DARK.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "b9b4d88a-9d1d-415a-8168-aef2f4d3f526",
+		"publisherDisplayName": "Liangru Liu",
+		"publisherId": "38d3078a-e2e3-4217-8e44-6a8b6cf6faaf"
+	}
+}
