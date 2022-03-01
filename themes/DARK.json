@@ -1,4 +1,4 @@
-// 20220214
+// 20220301
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -94,10 +94,10 @@
 	"diffEditor.removedTextBackground": "#eb504b40", //O
 	// "diffEditor.removedTextBorder" //del
 // 下拉列表 final
-	"dropdown.background": "#00000000", //1.2_1 侧方列表中的调试里的下拉列表
-	"dropdown.border": "#757575", //2.3_0
+	"dropdown.background": "#00000000", //1.2_1 侧方调试列表里下拉列表上部的选框控件
+	"dropdown.border": "#ffffff50", //3.2_0
 	"dropdown.foreground": "#ffffff", //4.1_1
-	"dropdown.listBackground": "#000000d0", //1.3_1
+	"dropdown.listBackground": "#202020ee", //3.2_0 设置和侧方调试列表里下拉列表下部的弹出列表
 // 编辑器 final
 	"editor.background": "#000000", //1.1_1
 // 查找 final
@@ -439,24 +439,24 @@
 	"sideBySideEditor.horizontalBorder": "#0a80d1", //2.1_1 编辑器组内拆分
 	"sideBySideEditor.verticalBorder": "#0a80d1", //2.1_1
 // 设置 //TODO
-	"settings.checkboxBackground": "#00000000", //1.2_1//del
-	"settings.checkboxBorder": "#b0b0b0", //4.2_1//del
-	"settings.checkboxForeground": "#ffffff", //4.1_1//del
-	"settings.dropdownBackground": "#00000000", //1.2_1//del
-	"settings.dropdownBorder": "#ffffff50", //del
-	"settings.dropdownForeground": "#ffffff", //4.1_1//del
-	"settings.dropdownListBorder": "#ffffff50", //del
+	"settings.checkboxBackground": "#a0a0a040", //3.2_0 or "#00000000", //1.2_1
+	"settings.checkboxBorder": "#00000000", //1.2_1 or "#b0b0b0", //4.2_1
+	"settings.checkboxForeground": "#ffffff", //4.1_1
+	"settings.dropdownBackground": "#80808040", //3.2_0 or 292929e9 or 00000000 //下拉列表上部的选框控件（另外影响C/C++ configurations页面）
+	"settings.dropdownBorder": "#00000000", //1.2_1 or "#ffffff50", //3.2_0
+	"settings.dropdownForeground": "#ffffff", //4.1_1
+	"settings.dropdownListBorder": "#a00000", //UNKWN
 	"settings.focusedRowBackground": "#ffffff30", //3.2_0
 	"settings.focusedRowBorder": "#00000000", //1.2_1
 	"settings.headerForeground": "#ffffff", //4.1_1
 	"settings.modifiedItemIndicator": "#0a80d1", //2.1_1
-	"settings.numberInputBackground": "#00000000", //1.2_1//del
-	"settings.numberInputBorder": "#ffffff50", //del
-	"settings.numberInputForeground": "#ffffff", //4.1_1//del
+	"settings.numberInputBackground": "#80808040", //3.2_0 or "#00000000", //1.2_1
+	"settings.numberInputBorder": "#00000000", //1.2_1 or "#ffffff50", //3.2_0
+	"settings.numberInputForeground": "#ffffff", //4.1_1
 	"settings.rowHoverBackground": "#ffffff20", //3.2_0
-	"settings.textInputBackground": "#00000000", //1.2_1//del
-	"settings.textInputBorder": "#ffffff50", //del
-	"settings.textInputForeground": "#ffffff", //4.1_1//del
+	"settings.textInputBackground": "#80808040", //3.2_0 or "#00000000", //1.2_1
+	"settings.textInputBorder": "#00000000", //1.2_1 or "#ffffff50", //3.2_0
+	"settings.textInputForeground": "#ffffff", //4.1_1
 // 列表 //TODO
 	"sideBar.background": "#000000", //1.1_1
 	"sideBar.border": "#0a80d1", //2.1_1
