@@ -6,7 +6,7 @@
 	"keywords": ["vscode", "theme", "dark", "night", "black", "high-contrast", "AMOLED"],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
-	"version": "0.5.15",
+	"version": "0.5.16",
 	"engines": {
 		"vscode": "^1.56.0"
 	},

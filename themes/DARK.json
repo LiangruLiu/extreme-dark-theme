@@ -1,4 +1,4 @@
-// 20220301
+// 20220313
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -65,7 +65,7 @@
 	"debugIcon.pauseForeground": "#dd3d58", //G 第1个
 	"debugIcon.restartForeground": "#dd3d58", //G 第5个
 	"debugIcon.startForeground": "#58b600", //G 第0个
-	"debugIcon.stepBackForeground": "#ff00ff", //G //UNKWN VSCode并没有IntelliTrace
+	"debugIcon.stepBackForeground": "#ff00ffaa", //G //UNKWN VSCode并没有IntelliTrace
 	"debugIcon.stepIntoForeground": "#bbb014", //G 第3个
 	"debugIcon.stepOutForeground": "#e78c36", //G 第4个
 	"debugIcon.stepOverForeground": "#58b600", //G 第2个
@@ -89,10 +89,16 @@
 // 编辑器之文本比较窗口 final
 	"diffEditor.border": "#ffffffc0", //2.3_0
 	"diffEditor.diagonalFill": "#ffffff2a", //3.2_0 并排比较时为了对齐而将缺少的行用斜线填充
-	"diffEditor.insertedTextBackground": "#24a03640", //O
+	"diffEditor.insertedLineBackground": "#23993430", //O
+	"diffEditor.insertedTextBackground": "#23993450", //O
 	// "diffEditor.insertedTextBorder" //del
-	"diffEditor.removedTextBackground": "#eb504b40", //O
+	"diffEditor.removedLineBackground": "#eb504b30", //O
+	"diffEditor.removedTextBackground": "#eb504b50", //O
 	// "diffEditor.removedTextBorder" //del
+	"diffEditorGutter.insertedLineBackground": "#23993430", //O
+	"diffEditorGutter.removedLineBackground": "#eb504b30", //O
+	"diffEditorOverview.insertedForeground": "#23993460", //O
+	"diffEditorOverview.removedForeground": "#eb504b60", //O
 // 下拉列表 final
 	"dropdown.background": "#00000000", //1.2_1 侧方调试列表里下拉列表上部的选框控件
 	"dropdown.border": "#ffffff50", //3.2_0
@@ -160,7 +166,7 @@
 // 行号区
 	"editorGutter.addedBackground": "#308f38", //O git 竖线 //TODO
 	"editorGutter.background": "#00000000", //1.2_1 行号
-	"editorGutter.commentRangeForeground": "#ff00ff", //UNKWN
+	"editorGutter.commentRangeForeground": "#ff00ffaa", //UNKWN
 	"editorGutter.deletedBackground": "#fa3d3d", //O git 小三角形 //TODO
 	"editorGutter.foldingControlForeground": "#4aaeff", //4.1_3 折叠
 	"editorGutter.modifiedBackground": "#c79406", //O git 竖线 //TODO
@@ -185,7 +191,7 @@
 	"editorInlayHint.typeBackground": "#880000", //UNKWN
 	"editorInlayHint.typeForeground": "#e4aeae", //UNKWN
 	"editorLightBulb.foreground": "#b99805", //I.2
-	"editorLightBulbAutoFix.foreground": "#ff00d4", //UNKWN
+	"editorLightBulbAutoFix.foreground": "#70a024", //markdown里能自动修复的警告
 	"editorLineNumber.activeForeground": "#d0d0d0", //4.1_2
 	"editorLineNumber.foreground": "#707070", //4.2_2
 	"editorLink.activeForeground": "#ffffff", //4.1_1 链接，包括Ctrl+Click、充当按钮的文本
@@ -197,18 +203,18 @@
 	"editorMarkerNavigationWarning.background": "#db7013", //W.2 编辑时警告处展开的横条的边框
 	"editorMarkerNavigationWarning.headerBackground":  "#693e1960", //W.3
 // 滚动条 final
-	"editorOverviewRuler.addedForeground": "#308f38a0", //O git //TODO
+	"editorOverviewRuler.addedForeground": "#308f38b0", //O git //TODO
 	"editorOverviewRuler.background": "#000000", //1.1_1
 	"editorOverviewRuler.border": "#ffffff3a", //2.2_1
 	"editorOverviewRuler.bracketMatchForeground": "#0a80d1", //2.1_1
 	"editorOverviewRuler.commonContentForeground": "#d0802077", //UNKWN
 	"editorOverviewRuler.currentContentForeground": "#20a06077",
-	"editorOverviewRuler.deletedForeground": "#fa3d3da0", //O git //TODO
+	"editorOverviewRuler.deletedForeground": "#fa3d3db0", //O git //TODO
 	"editorOverviewRuler.errorForeground": "#db0a26", //E.2
 	"editorOverviewRuler.findMatchForeground": "#808080", //2.1_0 //BUG
 	"editorOverviewRuler.incomingContentForeground": "#1080c077",
 	"editorOverviewRuler.infoForeground": "#b99805", //I.2
-	"editorOverviewRuler.modifiedForeground": "#c79406a0", //O git //TODO
+	"editorOverviewRuler.modifiedForeground": "#c79406b0", //O git //TODO
 	"editorOverviewRuler.rangeHighlightForeground": "#6bf1b9", //UNKWN
 	"editorOverviewRuler.selectionHighlightForeground": "#ffffff40", //2.1_0 //BUG
 	"editorOverviewRuler.warningForeground": "#db7013", //W.2
@@ -236,7 +242,7 @@
 	"editorWarning.foreground": "#e68e42", //W.1 警告语句波浪线
 	"editorWhitespace.foreground": "#ffffff2a", //3.2_0
 	"editorWidget.background": "#000000d0", //1.3_1
-	"editorWidget.border": "#ff00ff", //UNKWN
+	"editorWidget.border": "#ff00ffaa", //UNKWN
 	"editorWidget.foreground": "#b0b0b0", //4.2_1
 	"editorWidget.resizeBorder": "#ffffff50",
 	"errorForeground": "#a200ff", //查找未找到，等等 //TODO
@@ -280,12 +286,12 @@
 	"inputValidation.warningBackground": "#693e1960", //W.3 Git提交的信息过长
 	"inputValidation.warningBorder": "#db7013", //W.2
 	"inputValidation.warningForeground": "#e68e42", //W.1
-	"interactive.activeCodeBorder": "#ff4800", //UNKWN
-	"interactive.inactiveCodeBorder": "#ff008c", //UNKWN
+	"interactive.activeCodeBorder": "#0a80d1", //2.1_1 可用"# %%"将python代码分块成jupyter一样
+	"interactive.inactiveCodeBorder": "#ff00ffaa", //UNKWN
 	"keybindingLabel.background": "#00000000", //sel final 快捷键
 	"keybindingLabel.border": "#b0b0b0", //4.2_1 final
 	"keybindingLabel.bottomBorder": "#b0b0b0", //4.2_1 final
-	"keybindingLabel.foreground": "#dddddd", //4.1_0 final
+	"keybindingLabel.foreground": "#e0e0e0", //4.1_0 final
 	"keybindingTable.headerBackground": "#ffffff1a", //sel
 	"keybindingTable.rowsBackground": "#ffffff1a", //sel 快捷键列表偶数行
 // 列表，命令面板 final
@@ -362,7 +368,7 @@
 	"notebook.outputContainerBackgroundColor": "#000000", //1.1_1
 	"notebook.outputContainerBorderColor": "#ffffff3a", //2.2_1
 	"notebook.selectedCellBackground": "#3a3a3ac0", //3.2_1 选中块的外部背景
-	"notebook.selectedCellBorder": "#ff00ff", //UNKWN
+	"notebook.selectedCellBorder": "#ff00ffaa", //UNKWN
 	"notebook.symbolHighlightBackground": "#af6a0f", //UNKWN 点击导航栏（地址栏）
 	"notebookScrollbarSlider.activeBackground": "#ffffff3a", //3.2_0
 	"notebookScrollbarSlider.background": "#ffffff4a", //3.2_0
@@ -386,11 +392,11 @@
 	"panel.background": "#000000", //1.1_1
 	"panel.border": "#0a80d1", //2.1_1
 	"panel.dropBorder": "#0a80d1", //2.1_1
-	"panelInput.border": "#ff00ff", //UNKWN
+	"panelInput.border": "#ff00ffaa", //UNKWN
 	"panelSection.border": "#0a80d1", //2.1_1
 	"panelSection.dropBackground": "#ffffff2a", //3.2_0
 	"panelSectionHeader.background": "#00000000", //1.2_1
-	"panelSectionHeader.border": "#ff00ff", //UNKWN
+	"panelSectionHeader.border": "#ff00ffaa", //UNKWN
 	"panelSectionHeader.foreground": "#ffffff", //4.1_1
 	"panelTitle.activeBorder": "#ffffff", //2.3_0
 	"panelTitle.activeForeground": "#ffffff", //4.1_1
@@ -413,7 +419,7 @@
 // 其他 fianl
 	"pickerGroup.border": "#0a80d1", //2.1_1 快速打开
 	"pickerGroup.foreground": "#b0b0b0", //4.2_1
-	"ports.iconRunningProcessForeground": "#ff00ff", //UNKWN
+	"ports.iconRunningProcessForeground": "#ff00ffaa", //UNKWN
 	"problemsErrorIcon.foreground": "#ff566c", //E.1 弹窗
 	"problemsInfoIcon.foreground": "#cfb93b", //I.1
 	"problemsWarningIcon.foreground": "#e68e42", //W.1
@@ -427,7 +433,7 @@
 	"quickInputTitle.background": "#00000000", //1.2_1 设置同步-配置
 // 其他 final
 	"sash.hoverBorder": "#0a80d1", //2.1_1 可移动边线上悬停
-	"scm.providerBorder": "#ff00ff", //UNKWN
+	"scm.providerBorder": "#ff00ffaa", //UNKWN
 	"scrollbar.shadow": "#00000000", //1.2_1 or1.1_1
 	"scrollbarSlider.activeBackground": "#ffffff3a", //3.2_0
 	"scrollbarSlider.background": "#ffffff4a", //3.2_0
@@ -448,12 +454,14 @@
 	"settings.dropdownListBorder": "#a00000", //UNKWN
 	"settings.focusedRowBackground": "#ffffff30", //3.2_0
 	"settings.focusedRowBorder": "#00000000", //1.2_1
+	"settings.headerBorder": "#ffffff60", //2.3_0 分隔横线
 	"settings.headerForeground": "#ffffff", //4.1_1
 	"settings.modifiedItemIndicator": "#0a80d1", //2.1_1
 	"settings.numberInputBackground": "#80808040", //3.2_0 or "#00000000", //1.2_1
 	"settings.numberInputBorder": "#00000000", //1.2_1 or "#ffffff50", //3.2_0
 	"settings.numberInputForeground": "#ffffff", //4.1_1
 	"settings.rowHoverBackground": "#ffffff20", //3.2_0
+	"settings.sashBorder": "#ffffff60", //2.3_0 分隔竖线
 	"settings.textInputBackground": "#80808040", //3.2_0 or "#00000000", //1.2_1
 	"settings.textInputBorder": "#00000000", //1.2_1 or "#ffffff50", //3.2_0
 	"settings.textInputForeground": "#ffffff", //4.1_1
@@ -472,14 +480,16 @@
 	"statusBar.debuggingBackground": "#000000", //1.1_1
 	"statusBar.debuggingBorder": "#db7013", //W.2
 	"statusBar.debuggingForeground": "#b0b0b0", //4.2_1
+	"statusBar.focusBorder": "#ff00ffaa", //UNKWN
 	"statusBar.foreground": "#b0b0b0", //4.2_1
 	"statusBar.noFolderBackground": "#000000", //1.1_1
 	"statusBar.noFolderBorder": "#0a80d1", //2.1_1
 	"statusBar.noFolderForeground": "#b0b0b0", //4.2_1
 	"statusBarItem.activeBackground": "#00000000", //1.2_1
-	"statusBarItem.compactHoverBackground": "#795800", //UNKWN
+	"statusBarItem.compactHoverBackground": "#526900", //打开json文件时右下角 //TODO
 	"statusBarItem.errorBackground": "#a00000", //UNKWN
 	"statusBarItem.errorForeground": "#ff7777", //UNKWN
+	"statusBarItem.focusBorder": "#ffd000a2", //I_0 or 透明蓝色
 	"statusBarItem.hoverBackground": "#ffffff2a", //3.2_0
 	"statusBarItem.prominentBackground": "#ffffff2a", //3.2_0 按Ctrl+M
 	"statusBarItem.prominentForeground": "#4aaeff", //4.1_3
@@ -489,39 +499,40 @@
 	"statusBarItem.warningBackground": "#8d4b00", //UNKWN
 	"statusBarItem.warningForeground": "#ffb259", //UNKWN
 // 左侧列表的大纲和自动补全候选栏中的图标 //TODO //G
+	// 类：红；函数和方法：蓝紫；关键字：黄；变量：绿；模块和文件：红；
 	"symbolIcon.arrayForeground": "#8030c2",
 	"symbolIcon.booleanForeground": "#a70000",
-	"symbolIcon.classForeground": "#ff4800",
-	"symbolIcon.colorForeground": "#e77000",
-	"symbolIcon.constantForeground": "#cccccc", //define
+	"symbolIcon.classForeground": "#fc726d", //py: class //fin
+	"symbolIcon.colorForeground": "#eb9f60",
+	"symbolIcon.constantForeground": "#cccccc", //cpp: define
 	"symbolIcon.constructorForeground": "#ffe600",
-	"symbolIcon.enumeratorForeground": "#c9c239", //enum
-	"symbolIcon.enumeratorMemberForeground": "#aec265", //in enum
+	"symbolIcon.enumeratorForeground": "#c9c239", //cpp: enum
+	"symbolIcon.enumeratorMemberForeground": "#aec265", //cpp: in enum
 	"symbolIcon.eventForeground": "#a6ff00",
-	"symbolIcon.fieldForeground": "#7ab867", //in struct, union
+	"symbolIcon.fieldForeground": "#7ab867", //cpp: in struct, union; py: any var
 	"symbolIcon.fileForeground": "#00c77b",
 	"symbolIcon.folderForeground": "#00fff2",
-	"symbolIcon.functionForeground": "#78bdfd", //func
-	"symbolIcon.interfaceForeground": "#6edfd5", //typedef
+	"symbolIcon.functionForeground": "#5ca7ee", //cpp: func //fin
+	"symbolIcon.interfaceForeground": "#6edfd5", //cpp: typedef
 	"symbolIcon.keyForeground": "#0044ff",
-	"symbolIcon.keywordForeground": "#dac15f", //int,const,if,return
-	"symbolIcon.methodForeground": "#7700ff",
-	"symbolIcon.moduleForeground": "#c532ff",
+	"symbolIcon.keywordForeground": "#ccb248", //cpp: int,const,if,return //fin
+	"symbolIcon.methodForeground": "#a382ff", //py: method //fin
+	"symbolIcon.moduleForeground": "#ee768a", //py: module; json: {} //fin
 	"symbolIcon.namespaceForeground": "#ff68cd",
 	"symbolIcon.nullForeground": "#f14d4d",
 	"symbolIcon.numberForeground": "#e26d3e",
 	"symbolIcon.objectForeground": "#807307",
-	"symbolIcon.operatorForeground": "#025206", //operator
+	"symbolIcon.operatorForeground": "#025206", //cpp: operator
 	"symbolIcon.packageForeground": "#7e994d",
 	"symbolIcon.propertyForeground": "#096964",
 	"symbolIcon.referenceForeground": "#4e5f8d",
-	"symbolIcon.snippetForeground": "#838383",
-	"symbolIcon.stringForeground": "#78bdfd", //md标题, json项
-	"symbolIcon.structForeground": "#c9c239", //struct, union
+	"symbolIcon.snippetForeground": "#aaca19",
+	"symbolIcon.stringForeground": "#5ca7ee", //md: title; json: item
+	"symbolIcon.structForeground": "#c9c239", //cpp: struct, union
 	"symbolIcon.textForeground": "#ff0000",
-	"symbolIcon.typeParameterForeground": "#ff00ff",
-	"symbolIcon.unitForeground": "#3a3a3a",
-	"symbolIcon.variableForeground": "#7ab867", //int
+	"symbolIcon.typeParameterForeground": "#96e938",
+	"symbolIcon.unitForeground": "#a06521",
+	"symbolIcon.variableForeground": "#7ab867", //cpp: int
 // 标签栏 final
 	"tab.activeBackground": "#3a3a3ac0", //3.2_1
 	"tab.activeBorder": "#00000000", //1.2_1
@@ -570,22 +581,25 @@
 	"terminal.foreground": "#dddddd", //4.1_0
 	"terminal.selectionBackground": "#ffffff30", //sel
 	"terminal.tab.activeBorder": "#0a80d1", //2.1_1
+	"terminalCommandDecoration.defaultBackground": "#cfb93b", //G 需启用ShellIntegration
+	"terminalCommandDecoration.errorBackground": "#ff566c", //G
+	"terminalCommandDecoration.successBackground": "#8bb941", //G
 	"terminalCursor.background": "#000000", //1.1_1
 	"terminalCursor.foreground": "#ffffff", //4.1_1
 // 测试 （例如pytest，有测试文件才会自动显示）
 	"testing.iconErrored": "#ffa339", //UNKWN
-	"testing.iconFailed": "#ff566c", //E.1 错号
-	"testing.iconPassed": "#8bb941", // 对号
+	"testing.iconFailed": "#ff566c", //G //E.1 错号
+	"testing.iconPassed": "#8bb941", //G // 对号
 	"testing.iconQueued": "#11bdaf", //UNKWN
 	"testing.iconSkipped": "#6055ff", //UNKWN
-	"testing.iconUnset": "#b0b0b0", //4.2_1 小圆圈（未运行）和箭头（被跳过）
+	"testing.iconUnset": "#b0b0b0", //G //4.2_1 小圆圈（未运行）和箭头（被跳过）
 	"testing.message.error.decorationForeground": "#ff566c", //E.1 测试不过的函数名
 	"testing.message.error.lineBackground": "#6b172260", //E.3
 	"testing.message.info.decorationForeground": "#bc5fe0", //UNKWN
 	"testing.message.info.lineBackground": "#392846", //UNKWN
 	"testing.peekBorder": "#db0a26", //E.2 测试不过的查看窗口
 	"testing.peekHeaderBackground": "#6b172260", //E.3
-	"testing.runAction": "#cfb93b", //I.1 三角形
+	"testing.runAction": "#cfb93b", //G //I.1 三角形
 // 其他
 	"textBlockQuote.background": "#ffffff20", //3.2_0 set
 	"textBlockQuote.border": "#ffffff20", //3.2_0 set
@@ -593,7 +607,7 @@
 	"textLink.activeForeground": "#ffffff", //4.1_1 set 插件详情
 	"textLink.foreground": "#4aaeff", //4.1_3 set 插件详情
 	"textPreformat.foreground": "#d3bc54", //4.1_0 set 插件详情
-	"textSeparator.foreground": "#ff00ff", //UNKWN
+	"textSeparator.foreground": "#ff00ffaa", //UNKWN
 	"titleBar.activeBackground": "#000000", //1.1_1
 	"titleBar.activeForeground": "#b0b0b0", //4.2_1
 	"titleBar.border": "#ffffff3a", //2.2_1
@@ -612,7 +626,7 @@
 	"welcomePage.progress.foreground": "#323232", //3.2_0
 	"welcomePage.tileBackground": "#ffffff2a", //3.2_0
 	"welcomePage.tileHoverBackground": "#00000000", //1.2_1
-	// "welcomePage.tileShadow": "#ff0000", //UNKWN
+	"welcomePage.tileShadow": "#ff00ffaa", //UNKWN
 // 其他 final
 	"widget.shadow": "#00000000", //1.2_1 or1.1_1
 	// "window.activeBorder" //del
