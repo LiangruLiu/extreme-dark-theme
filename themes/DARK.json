@@ -1,4 +1,4 @@
-// 20220313
+// 20220408
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -39,9 +39,12 @@
 	"button.secondaryBackground": "#00000000", //1.2_1 弹窗
 	"button.secondaryForeground": "#b0b0b0", //4.2_1
 	"button.secondaryHoverBackground": "#ffffff2a", //3.2_0
+	// "charts.foreground": "#ff00ffaa", //UNKWN
 	"checkbox.background": "#00000000", //1.2_1
 	"checkbox.border": "#b0b0b0", //4.2_1
 	"checkbox.foreground": "#ffffff", //4.1_1
+	"comments.resolved.border": "#e69e4c", //UNKWN
+	"comments.unresolved.border": "#d66262", //UNKWN
 // 其他 这两项会给元素加上许多不必要的边线，但必须是注释掉而不能设为透明，否则设置页上方指示切换用户和工作区的下划线就没有了
 	// "contrastActiveBorder": //del
 	// "contrastBorder": "#00000000",
@@ -234,7 +237,8 @@
 	"editorSuggestWidget.selectedIconForeground": "#b0b0b0", //4.2_1 //TODO
 	"editorSuggestWidgetStatus.foreground": "#00ff00", //UNKWN
 // 其他
-	"editorUnicodeHighlight.border": "#b99805", //I.2
+	"editorUnicodeHighlight.border": "#ffd000b0", //I.2_0 or "#00000000", //1.2_1
+	"editorUnicodeHighlight.background": "#00000000", //1.2_1 or "#ac94287c", //I.3_0
 	"editorUnnecessaryCode.border": "#cfb93b90", //I.1_0 未使用的代码，如python中定义了但未使用的变量，以及return后面的语句，但C++条件编译只有提高透明度
 	"editorUnnecessaryCode.opacity": "#00000090", //不透明度
 	// "editorWarning.background" //del
@@ -578,14 +582,20 @@
 	"terminal.background": "#000000", //1.1_1
 	"terminal.border": "#0a80d1", //2.1_1
 	"terminal.dropBackground": "#ffffff2a", //3.2_0
+	"terminal.findMatchBackground": "#00000000", //1.2_1 终端查找
+	"terminal.findMatchBorder": "#cfb93b", //I.1
+	"terminal.findMatchHighlightBackground": "#00000000", //1.2_1
+	"terminal.findMatchHighlightBorder": "#808080", //4.2_0
 	"terminal.foreground": "#dddddd", //4.1_0
 	"terminal.selectionBackground": "#ffffff30", //sel
 	"terminal.tab.activeBorder": "#0a80d1", //2.1_1
-	"terminalCommandDecoration.defaultBackground": "#cfb93b", //G 需启用ShellIntegration
-	"terminalCommandDecoration.errorBackground": "#ff566c", //G
-	"terminalCommandDecoration.successBackground": "#8bb941", //G
+	"terminalCommandDecoration.defaultBackground": "#d0b727", //G 需启用ShellIntegration
+	"terminalCommandDecoration.errorBackground": "#ff5c67", //G
+	"terminalCommandDecoration.successBackground": "#71b53a", //G
 	"terminalCursor.background": "#000000", //1.1_1
 	"terminalCursor.foreground": "#ffffff", //4.1_1
+	"terminalOverviewRuler.cursorForeground": "#ffffff", //G 终端查找
+	"terminalOverviewRuler.findMatchForeground": "#439fea", //G
 // 测试 （例如pytest，有测试文件才会自动显示）
 	"testing.iconErrored": "#ffa339", //UNKWN
 	"testing.iconFailed": "#ff566c", //G //E.1 错号
