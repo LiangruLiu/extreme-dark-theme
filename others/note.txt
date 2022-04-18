@@ -17,7 +17,7 @@ git需要修改
 Reload Window 可以重新加载窗口以应用插件代码更新
 Inspect Editor Tokens and Scopes 可以查看语法着色
 Generate Color Theme From Current Settings 可以生成当前主题配置
-Toggle Developer Tools 可以检查文字对比度
+Toggle Developer Tools 可以检查文字对比度，可以查看插件报错信息和插件代码中console.log()输出的内容
 
 打开控制台，也可直接使用集成终端，但要注意选择cmd而非pwsh
 更新vsce：

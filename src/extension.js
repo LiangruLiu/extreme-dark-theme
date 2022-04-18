@@ -1,17 +1,13 @@
-const vscode = require('vscode');
-const configuration = vscode.workspace.getConfiguration();
-const data = require('../themes/DARK1.json');
+const vscode = require ("vscode")  // 请忽略提示，千万不要点击自动修复
+const config = vscode.workspace.getConfiguration()
+const feature = require ("./feature.js")
 
 exports.activate = function (context) {
-    console.log('您的扩展已被激活！');
-    // 注册命令
-    context.subscriptions.push(vscode.commands.registerCommand('extension.HiLLR', function () {
-        vscode.window.showInformationMessage('Hi!');
-    }));
-    if (configuration.get('Ext Dark.colorTheme') == "odp") vscode.window.showInformationMessage('odp');
-    vscode.window.showInformationMessage(data.type);
-};
+	context.subscriptions.push (vscode.commands.registerCommand ("extension.HiLLR", function () {
+		vscode.window.showInformationMessage ("Hello, LLR!")
+	}))
+	feature.toggleTokenColors (config.get ("Extreme-Dark-Theme.Token Colors"))
+}
 
 exports.deactivate = function () {
-    console.log('您的扩展已被释放！')
-};
+}

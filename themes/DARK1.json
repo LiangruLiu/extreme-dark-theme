@@ -1,7 +1,0 @@
-{
-	"$schema": "vscode://schemas/color-theme",
-	"name": "extreme-dark-theme",
-	"type": "dark",
-	"include": "./tokenColors_custom.json",
-	"note": "json不能有注释，否则脚本会报错"
-}
