@@ -1,10 +1,12 @@
-// 20220408
+// 20220418
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
 "type": "dark",
-// "include": "./tokenColors_custom.json",
-"include": "./tokenColors_default.json",
+   "include": "./tokenColors_Original.json",
+// "include": "./tokenColors_OneDarkPro.json",
+// "include": "./tokenColors_Custom.json",
+
 "colors": {
 	// "window.activeBorder":"#ffffff", // 调色用
 // 边栏 final
