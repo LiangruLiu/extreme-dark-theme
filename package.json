@@ -6,42 +6,16 @@
 	"keywords": ["vscode", "theme", "dark", "night", "black", "high-contrast", "AMOLED"],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
-	"version": "0.5.17",
+	"version": "0.5.18",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
-	"main": "./sources/extension",
-	"activationEvents": [
-		"onStartupFinished",
-		"onCommand:extension.HiLLR"
-	],
 	"contributes": {
 		"themes": [
 			{
 				"label": "Extreme Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/DARK.json"
-			}
-		],
-		"configuration": {
-			"type": "object",
-			"title": "Extreme Dark Theme",
-			"properties": {
-				"Extreme-Dark-Theme.Token Colors": {
-					"type": "string",
-					"default": "Original",
-					"markdownDescription": "Under Development... \n\n Usage: \n\n 1. Use `Ctrl+Shift+P` to open `Command Palette` \n\n 2. Input `Developer: Reload Window` then execute \n\n 3. Repeat twice to apply changes",
-					"enum": [
-						"Original",
-						"OneDarkPro"
-					]
-				}
-			}
-		},
-		"commands": [
-			{
-				"command": "extension.HiLLR",
-				"title": "HiLLR (hello world)"
 			}
 		]
 	},
