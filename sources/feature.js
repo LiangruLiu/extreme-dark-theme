@@ -1,4 +1,4 @@
-const fs = require ("fs")  // npm i --save-dev @types/node  // 请忽略提示，千万不要点击自动修复
+const fs = require ("fs")  // 请忽略提示，千万不要点击自动修复
 const path = require ("path")
 
 function overtype (filePath, cursorPos, content) {
@@ -15,7 +15,7 @@ function overtype (filePath, cursorPos, content) {
 
 // 本函数通过切换注释实现
 function toggleTokenColors (colorSet) {
-	themeFilePath = path.join (__dirname, "../themes/DARK.json")  // 用__dirname获取当前模块的目录名
+	themeFilePath = path.join (__dirname, "../themes/ExtremeDark.json")  // 用__dirname获取当前模块的目录名
 	if (colorSet === "OneDarkPro") {
 		overtype (themeFilePath, 103, "//")
 		overtype (themeFilePath, 148, "  ")

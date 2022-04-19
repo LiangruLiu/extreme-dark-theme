@@ -1,4 +1,4 @@
-<!--20220301-->
+<!--20220419-->
 <span id="jump-begin"/> <h1 align="center"> Extreme Dark Theme </h1>
 
 <div align=center>
@@ -15,7 +15,7 @@
 
    <p align="center">
       这是一个深色主题，非常非常暗！<br/>
-      保留了默认主题的语法高亮。<br/>
+      语法高亮配色可以在原始主题样式和 OneDarkPro 样式中选择。<br/>
       首先声明，它目前还不够完善，详见 <a href="#jump-ch">文末</a>。
    </p>
    <div align="left">
@@ -35,7 +35,7 @@
 
 ## 安装
 
-1. 点击VSCode左侧扩展按钮，在搜索框搜索，点击 \[安装]。
+1. 点击VSCode左侧扩展按钮，在搜索框搜索，点击 [安装]。
 2. 点击VSCode左侧设置按钮，点击 [颜色主题]，选择 [Extreme Dark]。
 
 
@@ -59,9 +59,12 @@
 2. 我做这个主题更多是为了自用。不过学习如何制作主题、一点点摸索设置项的含义，都花费了我很长时间。因此我想做成插件分享出来。<br/>
    如果你也想自定义一个主题，并且你也说中文的话，建议下载看一看。代码中写有中文注释，包括代码条目与界面元素的对应、可供参考的网站、注意事项，也许能有所帮助。
 3. <span id="jump-ch"/>
-   这个主题之所以保留了默认主题的语法高亮，是因为我只是编程初学者，会的语言很少，不了解其他语言如何高亮为好。<br/>
-   （其实我自己用的是这个插件的另一个版本，是我自定义的高亮策略）
-4. 作为初学者，我接触不到VSCode的全部功能，因此这个主题还不完善。<br/>
+   这个主题之所以保留了默认主题的语法高亮，是因为我只是编程初学者，会的语言很少，不了解其他语言如何高亮为好。
+   （其实我自己用的是这个插件的另一个版本，是我自定义的高亮策略）<br/>
+   现在我为插件加上了设置项，使得语法高亮配色可以在原始主题样式和 OneDarkPro 样式间切换，但这就引入了两个问题：
+   一是我不太会开发插件，目前切换样式的实现逻辑不太好，程序有出错的可能；
+   二是原版 OneDarkPro 主题可能是动态调整的，而我只是摘出了主要的静态部分。
+4. 作为初学者，我接触不到 VSCode 的全部功能，因此这个主题还不完善。<br/>
    如果你在使用过程中，遇到和周围风格不符的颜色（多半是刺眼的品红色），或是有元素显示不出来，那往往就是我所接触不到的。欢迎将详细的截图发送至邮箱 <LiangruLiu@outlook.com> 反馈给我。
 
 
@@ -75,8 +78,8 @@
 </details>
 
 <p align="center">
-   This is a dark theme, very, very dark!<br/>
-   The syntax highlighting of the default theme is retained.<br/>
+   This is a dark theme, very, very dark! <br/>
+   The syntax highlighting color scheme can be chosen between the original theme style and the OneDarkPro style.<br/>
    First of all, it's not perfect at present, see <a href="#jump-en">end of article</a> for details.
 </p>
 
@@ -120,9 +123,12 @@
 2. I made this theme mainly for my own use. But whether learning how to make a theme, or figuring out the meaning of setting items little by little, all took me a long time. So I want to make a plugin to share it. <br/>
    If you also want to customize a theme, and you also speak Chinese, it's recommended to download it and take a look. Chinese comments are written in the code, including the correspondence between code entries and interface elements, websites for reference, and precautions, which may be helpful.
 3. <span id="jump-en"/>
-   The reason why this theme retains the syntax highlighting of the default theme is that I'm just a beginner in programming and know very few languages, so I don't know how to highlight other languages properly. <br/>
-   (Actually, I myself use another version of this plug-in, which is my customized highlighting strategy)
-4. As a beginner, there are many features in VSCode that I don't use, so this theme is not complete yet. <br/>
+   The reason why this theme retains the syntax highlighting of the default theme is that I'm just a beginner in programming and know very few languages, so I don't know how to highlight other languages properly.
+   (Actually, I myself use another version of this plug-in, which is my customized highlighting strategy) <br/>
+   Now I've added a setting item to the plugin so that the syntax highlighting color scheme can be switched between the original theme style and the OneDarkPro style, but this introduces two problems:
+   One is that I'm not good at developing plug-ins. The current implementation logic of switching styles is not very good, and there's a possibility of program errors;
+   The second is that the original OneDarkPro theme may be dynamically adjusted, while I just picked out the main static part.
+4. As a beginner, there are many features in VSCode that I have never used, so this theme is not complete yet. <br/>
    If you encounter a color that doesn't match the surrounding style (mostly dazzling magenta) or an element that cannot be displayed during use, it's often beyond my reach. Welcome to send detailed screenshots to email <LiangruLiu@outlook.com> to give me feedback.
 
 
