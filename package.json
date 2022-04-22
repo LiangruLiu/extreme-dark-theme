@@ -6,9 +6,14 @@
 	"keywords": ["vscode", "theme", "dark", "night", "black", "high-contrast", "AMOLED"],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
-	"version": "0.6.0",
+	"version": "0.6.1",
 	"engines": {
 		"vscode": "^1.56.0"
+	},
+	"capabilities": {
+		"untrustedWorkspaces": {
+			"supported": true
+		}
 	},
 	"main": "./sources/extension",
 	"activationEvents": [
@@ -30,7 +35,7 @@
 				"Extreme-Dark-Theme.Token Colors": {
 					"type": "string",
 					"default": "Original",
-					"markdownDescription": "Under Development... \n\n Usage: \n\n 1. Use `Ctrl+Shift+P` to open `Command Palette` \n\n 2. Input `Developer: Reload Window` then execute \n\n 3. Repeat twice to apply changes",
+					"markdownDescription": "Choose syntax highlighting color scheme. \n\n Under Development...",
 					"enum": [
 						"Original",
 						"OneDarkPro"

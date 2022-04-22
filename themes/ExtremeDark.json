@@ -1,4 +1,4 @@
-// 20220419
+// 20220422
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -506,7 +506,7 @@
 	"statusBarItem.warningForeground": "#ffb259", //UNKWN
 // 左侧列表的大纲和自动补全候选栏中的图标 //TODO //G
 	// 类：红；函数和方法：蓝紫；关键字：黄；变量：绿；模块和文件：红；
-	"symbolIcon.arrayForeground": "#8030c2",
+	"symbolIcon.arrayForeground": "#a382ff", //json: []
 	"symbolIcon.booleanForeground": "#a70000",
 	"symbolIcon.classForeground": "#fc726d", //py: class //fin
 	"symbolIcon.colorForeground": "#eb9f60",
