@@ -3,10 +3,10 @@
 	"displayName": "Extreme Dark Theme",
 	"description": "A dark theme for VS Code made by LLR",
 	"categories": ["Themes"],
-	"keywords": ["vscode", "theme", "dark", "night", "black", "high-contrast", "AMOLED"],
+	"keywords": ["black", "AMOLED", "dark", "night", "high-contrast", "theme", "vscode"],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
-	"version": "0.6.1",
+	"version": "0.6.2",
 	"engines": {
 		"vscode": "^1.56.0"
 	},

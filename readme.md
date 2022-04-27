@@ -1,11 +1,11 @@
-<!--20220419-->
+<!--20220426-->
 <span id="jump-begin"/> <h1 align="center"> Extreme Dark Theme </h1>
 
 <div align=center>
 <img alt="VS Market Version" src="https://img.shields.io/visual-studio-marketplace/v/liangruliu.extreme-dark-theme?color=0c649e&style=flat-square">
 <img alt="VS Market Last Updated" src="https://img.shields.io/visual-studio-marketplace/last-updated/liangruliu.extreme-dark-theme?color=0c649e&style=flat-square">
 <img alt="VS Market Installs" src="https://img.shields.io/visual-studio-marketplace/i/liangruliu.extreme-dark-theme?color=0c649e&style=flat-square">
-<img alt="(Static) Extension's Keywords" src="https://img.shields.io/badge/keywords-dark%2C%20night%2C%20black%2C%20high--contrast%2C%20amoled-0c649e?style=flat-square">
+<img alt="(Static) Extension's Keywords" src="https://img.shields.io/badge/keywords-black%2C%20amoled%2C%20dark%2C%20night%2C%20high--contrast-0c649e?style=flat-square">
 </div><br/>
 
 

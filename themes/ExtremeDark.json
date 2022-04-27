@@ -1,4 +1,4 @@
-// 20220422
+// 20220427
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -148,8 +148,21 @@
 	// "editor.wordHighlightBorder" //del
 	"editor.wordHighlightStrongBackground": "#004880c0", //3_0 java、js的变量定义、java的函数
 	// "editor.wordHighlightStrongBorder" //del
+	"editorBracketHighlight.foreground1": "#c5ab53", //G
+	"editorBracketHighlight.foreground2": "#8db460", //G
+	"editorBracketHighlight.foreground3": "#e099b5", //G
+	"editorBracketHighlight.foreground4": "#7a9de9", //G
+	"editorBracketHighlight.unexpectedBracket.foreground": "#ec7f77", //G
 	"editorBracketMatch.background": "#000000", //1.1_1
 	"editorBracketMatch.border": "#0a80d1", //2.1_1
+	"editorBracketPairGuide.activeBackground1": "#c5ab53b0", //G
+	"editorBracketPairGuide.activeBackground2": "#8db460b0", //G
+	"editorBracketPairGuide.activeBackground3": "#e099b5b0", //G
+	"editorBracketPairGuide.activeBackground4": "#7a9de9b0", //G
+	"editorBracketPairGuide.background1": "#c5ab5350", //G
+	"editorBracketPairGuide.background2": "#8db46050", //G
+	"editorBracketPairGuide.background3": "#e099b550", //G
+	"editorBracketPairGuide.background4": "#7a9de950", //G
 	"editorCodeLens.foreground": "#b0b0b0", //4.2_1 嵌在编辑器内的充当按钮的文本，Java主函数前、git合并冲突时会出现
 	"editorCursor.background": "#666666", //4.1_0
 	"editorCursor.foreground": "#ffffff", //4.1_1
@@ -169,12 +182,12 @@
 	"editorGroupHeader.tabsBackground": "#000000", //1.1_1
 	"editorGroupHeader.tabsBorder": "#ffffff3a", //2.2_1
 // 行号区
-	"editorGutter.addedBackground": "#308f38", //O git 竖线 //TODO
+	"editorGutter.addedBackground": "#71b53aa0", //O git 竖线
 	"editorGutter.background": "#00000000", //1.2_1 行号
 	"editorGutter.commentRangeForeground": "#ff00ffaa", //UNKWN
-	"editorGutter.deletedBackground": "#fa3d3d", //O git 小三角形 //TODO
+	"editorGutter.deletedBackground": "#ff5c67a0", //O git 小三角形
 	"editorGutter.foldingControlForeground": "#4aaeff", //4.1_3 折叠
-	"editorGutter.modifiedBackground": "#c79406", //O git 竖线 //TODO
+	"editorGutter.modifiedBackground": "#d0b127a0", //O git 竖线
 	"editorHint.border": "#af4dff", //UNKWN
 	"editorHint.foreground": "#11d4c4", //UNKWN
 // 悬停提示，包括编辑器中的代码和整个界面中的按钮 final
@@ -184,8 +197,8 @@
 	"editorHoverWidget.highlightForeground": "#4aaeff", //4.1_3 正在写的函数参数
 	"editorHoverWidget.statusBarBackground": "#00000000", //1.2_1
 // 编辑器之其他 final
-	"editorIndentGuide.activeBackground": "#0a80d190", //2.1_0
-	"editorIndentGuide.background": "#ffffff3a", //2.2_1
+	"editorIndentGuide.activeBackground": "#0a80d190", //2.1_0 没有被匹配括号连线覆盖时
+	"editorIndentGuide.background": "#ffffff3a", //2.2_1 没有被匹配括号连线覆盖时
 	// "editorInfo.background" //del
 	// "editorInfo.border" //del
 	"editorInfo.foreground": "#cfb93b", //I.1
@@ -208,18 +221,18 @@
 	"editorMarkerNavigationWarning.background": "#db7013", //W.2 编辑时警告处展开的横条的边框
 	"editorMarkerNavigationWarning.headerBackground":  "#693e1960", //W.3
 // 滚动条 final
-	"editorOverviewRuler.addedForeground": "#308f38b0", //O git //TODO
+	"editorOverviewRuler.addedForeground": "#71b53a80", //O git
 	"editorOverviewRuler.background": "#000000", //1.1_1
 	"editorOverviewRuler.border": "#ffffff3a", //2.2_1
 	"editorOverviewRuler.bracketMatchForeground": "#0a80d1", //2.1_1
 	"editorOverviewRuler.commonContentForeground": "#d0802077", //UNKWN
 	"editorOverviewRuler.currentContentForeground": "#20a06077",
-	"editorOverviewRuler.deletedForeground": "#fa3d3db0", //O git //TODO
+	"editorOverviewRuler.deletedForeground": "#ff5c6780", //O git
 	"editorOverviewRuler.errorForeground": "#db0a26", //E.2
 	"editorOverviewRuler.findMatchForeground": "#808080", //2.1_0 //BUG
 	"editorOverviewRuler.incomingContentForeground": "#1080c077",
 	"editorOverviewRuler.infoForeground": "#b99805", //I.2
-	"editorOverviewRuler.modifiedForeground": "#c79406b0", //O git //TODO
+	"editorOverviewRuler.modifiedForeground": "#d0b12780", //O git
 	"editorOverviewRuler.rangeHighlightForeground": "#6bf1b9", //UNKWN
 	"editorOverviewRuler.selectionHighlightForeground": "#ffffff40", //2.1_0 //BUG
 	"editorOverviewRuler.warningForeground": "#db7013", //W.2
@@ -353,9 +366,9 @@
 	"minimap.selectionHighlight": "#ffffff70", //3_0
 	"minimap.selectionOccurrenceHighlight": "#ffffff44", //3_0
 	"minimap.warningHighlight": "#db7013aa", //W.2_0
-	"minimapGutter.addedBackground": "#308f38", //O git 对应行号位置的小点 //TODO
-	"minimapGutter.deletedBackground": "#fa3d3d", //O git //TODO
-	"minimapGutter.modifiedBackground": "#c79406", //O git //TODO
+	"minimapGutter.addedBackground": "#71b53aa0", //O git 对应行号位置的小点
+	"minimapGutter.deletedBackground": "#ff5c67a0", //O git
+	"minimapGutter.modifiedBackground": "#d0b127a0", //O git
 	"minimapSlider.activeBackground": "#ffffff50", //3.2_0
 	"minimapSlider.background": "#ffffff30", //3.2_0
 	"minimapSlider.hoverBackground": "#ffffff40", //3.2_0
@@ -591,7 +604,7 @@
 	"terminal.foreground": "#dddddd", //4.1_0
 	"terminal.selectionBackground": "#ffffff30", //sel
 	"terminal.tab.activeBorder": "#0a80d1", //2.1_1
-	"terminalCommandDecoration.defaultBackground": "#d0b727", //G 需启用ShellIntegration
+	"terminalCommandDecoration.defaultBackground": "#d0b127", //G 需启用ShellIntegration
 	"terminalCommandDecoration.errorBackground": "#ff5c67", //G
 	"terminalCommandDecoration.successBackground": "#71b53a", //G
 	"terminalCursor.background": "#000000", //1.1_1
