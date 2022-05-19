@@ -1,4 +1,4 @@
-// 20220427
+// 20220519
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
@@ -9,6 +9,7 @@
 
 "colors": {
 	// "window.activeBorder":"#ffffff", // 调色用
+	// "window.inactiveBorder":"#ffffff", // 调色用
 // 边栏 final
 	"activityBar.activeBackground": "#00000000", //1.2_1
 	"activityBar.activeBorder": "#d0d0d0", //2.3_0
@@ -28,6 +29,9 @@
 	"banner.foreground": "#cfb93b", //I.1
 	"banner.iconForeground": "#4aaeff", //4.1_3 //TODO
 // 文件路径栏 final
+	"bookmarks.lineBackground": "#00345dc0", //3.1_2 Bookmarks插件
+	"bookmarks.lineBorder": "#00000000", //1.2_1
+	"bookmarks.overviewRuler": "#4aaeffa0", //4.1_0
 	"breadcrumb.activeSelectionForeground": "#ffffff", //4.1_1
 	"breadcrumb.background": "#000000", //1.1_1
 	"breadcrumb.focusForeground": "#4aaeff", //4.1_3
@@ -45,8 +49,6 @@
 	"checkbox.background": "#00000000", //1.2_1
 	"checkbox.border": "#b0b0b0", //4.2_1
 	"checkbox.foreground": "#ffffff", //4.1_1
-	"comments.resolved.border": "#e69e4c", //UNKWN
-	"comments.unresolved.border": "#d66262", //UNKWN
 // 其他 这两项会给元素加上许多不必要的边线，但必须是注释掉而不能设为透明，否则设置页上方指示切换用户和工作区的下划线就没有了
 	// "contrastActiveBorder": //del
 	// "contrastBorder": "#00000000",
@@ -109,6 +111,7 @@
 	"dropdown.border": "#ffffff50", //3.2_0
 	"dropdown.foreground": "#ffffff", //4.1_1
 	"dropdown.listBackground": "#202020ee", //3.2_0 设置和侧方调试列表里下拉列表下部的弹出列表
+	"disabledForeground": "#707070", //4.3_1 不可点击的按钮和列表项
 // 编辑器 final
 	"editor.background": "#000000", //1.1_1
 // 查找 final
@@ -150,20 +153,26 @@
 	// "editor.wordHighlightStrongBorder" //del
 	"editorBracketHighlight.foreground1": "#c5ab53", //G
 	"editorBracketHighlight.foreground2": "#8db460", //G
-	"editorBracketHighlight.foreground3": "#e099b5", //G
-	"editorBracketHighlight.foreground4": "#7a9de9", //G
-	"editorBracketHighlight.unexpectedBracket.foreground": "#ec7f77", //G
+	"editorBracketHighlight.foreground3": "#7799e3", //G
+	"editorBracketHighlight.foreground4": "#d291ab", //G
+	"editorBracketHighlight.unexpectedBracket.foreground": "#f4665c", //G
 	"editorBracketMatch.background": "#000000", //1.1_1
 	"editorBracketMatch.border": "#0a80d1", //2.1_1
 	"editorBracketPairGuide.activeBackground1": "#c5ab53b0", //G
 	"editorBracketPairGuide.activeBackground2": "#8db460b0", //G
-	"editorBracketPairGuide.activeBackground3": "#e099b5b0", //G
-	"editorBracketPairGuide.activeBackground4": "#7a9de9b0", //G
+	"editorBracketPairGuide.activeBackground3": "#7799e3b0", //G
+	"editorBracketPairGuide.activeBackground4": "#d291abb0", //G
 	"editorBracketPairGuide.background1": "#c5ab5350", //G
 	"editorBracketPairGuide.background2": "#8db46050", //G
-	"editorBracketPairGuide.background3": "#e099b550", //G
-	"editorBracketPairGuide.background4": "#7a9de950", //G
+	"editorBracketPairGuide.background3": "#7799e350", //G
+	"editorBracketPairGuide.background4": "#d291ab50", //G
 	"editorCodeLens.foreground": "#b0b0b0", //4.2_1 嵌在编辑器内的充当按钮的文本，Java主函数前、git合并冲突时会出现
+	"editorCommentsWidget.rangeActiveBackground": "#10575d", //TODO //CodeTour插件
+	"editorCommentsWidget.rangeActiveBorder": "#90cd6d", //TODO
+	"editorCommentsWidget.rangeBackground": "#9ca724", //TODO
+	"editorCommentsWidget.rangeBorder": "#ec9d49", //TODO
+	"editorCommentsWidget.resolvedBorder": "#691cc2", //UNKWN
+	"editorCommentsWidget.unresolvedBorder": "#c56eaa", //UNKWN
 	"editorCursor.background": "#666666", //4.1_0
 	"editorCursor.foreground": "#ffffff", //4.1_1
 	// "editorError.background" //del
@@ -175,6 +184,9 @@
 // 多编辑器 final
 	"editorGroup.border": "#0a80d1", //2.1_1
 	"editorGroup.dropBackground": "#ffffff2a", //3.2_0
+	"editorGroup.dropIntoPromptBackground": "#000000d0", //1.3_1
+	"editorGroup.dropIntoPromptBorder": "#ffffff3a", //2.2_1
+	"editorGroup.dropIntoPromptForeground": "#ffffff", //4.1_1
 	"editorGroup.emptyBackground": "#ffffff25", //3.2_0
 	"editorGroup.focusedEmptyBorder": "#00000000", //1.2_1 在设置中被关闭
 	"editorGroupHeader.border": "#ffffff3a", //2.2_1
@@ -182,12 +194,12 @@
 	"editorGroupHeader.tabsBackground": "#000000", //1.1_1
 	"editorGroupHeader.tabsBorder": "#ffffff3a", //2.2_1
 // 行号区
-	"editorGutter.addedBackground": "#71b53aa0", //O git 竖线
+	"editorGutter.addedBackground": "#4a7626", //O git 竖线 #71b53aa0
 	"editorGutter.background": "#00000000", //1.2_1 行号
-	"editorGutter.commentRangeForeground": "#ff00ffaa", //UNKWN
-	"editorGutter.deletedBackground": "#ff5c67a0", //O git 小三角形
+	"editorGutter.commentRangeForeground": "#00ffb7aa", //CodeTour插件 //TODO
+	"editorGutter.deletedBackground": "#a63c43", //O git 小三角形 #ff5c67a0
 	"editorGutter.foldingControlForeground": "#4aaeff", //4.1_3 折叠
-	"editorGutter.modifiedBackground": "#d0b127a0", //O git 竖线
+	"editorGutter.modifiedBackground": "#89751a", //O git 竖线 #d0b127a0
 	"editorHint.border": "#af4dff", //UNKWN
 	"editorHint.foreground": "#11d4c4", //UNKWN
 // 悬停提示，包括编辑器中的代码和整个界面中的按钮 final
@@ -202,12 +214,12 @@
 	// "editorInfo.background" //del
 	// "editorInfo.border" //del
 	"editorInfo.foreground": "#cfb93b", //I.1
-	"editorInlayHint.background": "#880000", //UNKWN 参数名提示？类型推断？
-	"editorInlayHint.foreground": "#e4aeae", //UNKWN
-	"editorInlayHint.parameterBackground": "#880000", //UNKWN
-	"editorInlayHint.parameterForeground": "#e4aeae", //UNKWN
-	"editorInlayHint.typeBackground": "#880000", //UNKWN
-	"editorInlayHint.typeForeground": "#e4aeae", //UNKWN
+	"editorInlayHint.background": "#38424f8a", //G 函数参数名和数据类型的行内提示，目前Js、Cs等都支持 \
+	"editorInlayHint.foreground": "#687684", //G 通过变暗并变不透明，来使得选中时不凸显出来
+	"editorInlayHint.parameterBackground": "#48513f8a", //G
+	"editorInlayHint.parameterForeground": "#787e71", //G
+	"editorInlayHint.typeBackground": "#52513c8a", //G
+	"editorInlayHint.typeForeground": "#797867",//G
 	"editorLightBulb.foreground": "#b99805", //I.2
 	"editorLightBulbAutoFix.foreground": "#70a024", //markdown里能自动修复的警告
 	"editorLineNumber.activeForeground": "#d0d0d0", //4.1_2
@@ -276,16 +288,16 @@
 	"focusBorder": "#ffd000a2", //I_0 or 透明蓝色
 	"foreground": "#ffffff", //4.1_1 欢迎界面，设置，左侧列表的部分文字，标签栏右侧按钮，等等
 	// 源代码管理
-	"gitDecoration.addedResourceForeground": "#a2b89c", //G git A标记和该项文字的颜色 直接建立新远程仓库并上传当前文件夹
-	"gitDecoration.conflictingResourceForeground": "#ff566c", //E.1 git !标记和该项文字的颜色。冲突可通过github和本地修改同一行产生
-	"gitDecoration.deletedResourceForeground": "#ec7f77", //G git D标记和该项文字的颜色
-	"gitDecoration.ignoredResourceForeground": "#6a7f94", //G git gitignore涉及的文件名颜色
-	"gitDecoration.modifiedResourceForeground": "#c5ac59", //G git M标记和该项文字的颜色
-	"gitDecoration.renamedResourceForeground": "#5aafc0", //G git R标记和该项文字的颜色 用“git mv”命令移动或重命名
-	"gitDecoration.stageDeletedResourceForeground": "#ea9a50", //UNKWN
-	"gitDecoration.stageModifiedResourceForeground": "#9a5ce7", //UNKWN
-	"gitDecoration.submoduleResourceForeground": "#00c77b", //UNKWN
-	"gitDecoration.untrackedResourceForeground": "#8eb65d", //G git U标记和该项文字的颜色
+	"gitDecoration.addedResourceForeground": "#a2b89c", //G git新建且已暂存 A标记
+	"gitDecoration.conflictingResourceForeground": "#ff566c", //E.1 git冲突 !标记 网站和本地修改同一行
+	"gitDecoration.deletedResourceForeground": "#ec7f77", //G git删除 D标记
+	"gitDecoration.ignoredResourceForeground": "#6a7f94", //G git忽略 用gitignore文件忽略版本管理
+	"gitDecoration.modifiedResourceForeground": "#c5ac59", //G git修改 M标记
+	"gitDecoration.renamedResourceForeground": "#5aafc0", //G git路径变更 R标记 用“git mv”命令移动或重命名
+	"gitDecoration.stageDeletedResourceForeground": "#dea5a3", //G git删除且已暂存 D标记
+	"gitDecoration.stageModifiedResourceForeground": "#bbb085", //G git修改且已暂存 M标记
+	"gitDecoration.submoduleResourceForeground": "#ff00ffaa", //UNKWN
+	"gitDecoration.untrackedResourceForeground": "#8eb65d", //G git新建 U标记
 // 其他
 	"icon.foreground": "#dddddd", //4.1_0 列表标题和展开，查找替换框，右上角，扩展详情 //要是列表里的能独立设为4.1_3就好了
 	"input.background": "#00000000", //1.2_1//set
@@ -505,7 +517,7 @@
 	"statusBar.noFolderBorder": "#0a80d1", //2.1_1
 	"statusBar.noFolderForeground": "#b0b0b0", //4.2_1
 	"statusBarItem.activeBackground": "#00000000", //1.2_1
-	"statusBarItem.compactHoverBackground": "#526900", //打开json文件时右下角 //TODO
+	"statusBarItem.compactHoverBackground": "#289eff6a", //3.2_0 打开json文件时右下角
 	"statusBarItem.errorBackground": "#a00000", //UNKWN
 	"statusBarItem.errorForeground": "#ff7777", //UNKWN
 	"statusBarItem.focusBorder": "#ffd000a2", //I_0 or 透明蓝色
@@ -520,7 +532,7 @@
 // 左侧列表的大纲和自动补全候选栏中的图标 //TODO //G
 	// 类：红；函数和方法：蓝紫；关键字：黄；变量：绿；模块和文件：红；
 	"symbolIcon.arrayForeground": "#a382ff", //json: []
-	"symbolIcon.booleanForeground": "#a70000",
+	"symbolIcon.booleanForeground": "#1cb078", //json: bool
 	"symbolIcon.classForeground": "#fc726d", //py: class //fin
 	"symbolIcon.colorForeground": "#eb9f60",
 	"symbolIcon.constantForeground": "#cccccc", //cpp: define
@@ -529,7 +541,7 @@
 	"symbolIcon.enumeratorMemberForeground": "#aec265", //cpp: in enum
 	"symbolIcon.eventForeground": "#a6ff00",
 	"symbolIcon.fieldForeground": "#7ab867", //cpp: in struct, union; py: any var
-	"symbolIcon.fileForeground": "#00c77b",
+	"symbolIcon.fileForeground": "#8c0edb",
 	"symbolIcon.folderForeground": "#00fff2",
 	"symbolIcon.functionForeground": "#5ca7ee", //cpp: func //fin
 	"symbolIcon.interfaceForeground": "#6edfd5", //cpp: typedef
@@ -539,7 +551,7 @@
 	"symbolIcon.moduleForeground": "#ee768a", //py: module; json: {} //fin
 	"symbolIcon.namespaceForeground": "#ff68cd",
 	"symbolIcon.nullForeground": "#f14d4d",
-	"symbolIcon.numberForeground": "#e26d3e",
+	"symbolIcon.numberForeground": "#1cb078", //json: num
 	"symbolIcon.objectForeground": "#807307",
 	"symbolIcon.operatorForeground": "#025206", //cpp: operator
 	"symbolIcon.packageForeground": "#7e994d",
@@ -559,10 +571,10 @@
 	"tab.activeForeground": "#ffffff", //4.1_1
 	"tab.activeModifiedBorder": "#dddddd", //2.3_0
 	"tab.border": "#ffffff3a", //2.2_1
-	"tab.hoverBackground": "#00000000", //1.2_1
+	"tab.hoverBackground": "#000000", //1.1_1
 	"tab.hoverBorder": "#0a80d1", //2.1_1
 	"tab.hoverForeground": "#4aaeff", //4.1_3
-	"tab.inactiveBackground": "#00000000", //1.2_1
+	"tab.inactiveBackground": "#000000a0", //1.1_0 需要注意有固定标签且长度不够而形成重叠的情况
 	"tab.inactiveForeground": "#b0b0b0", //4.2_1
 	"tab.inactiveModifiedBorder": "#00000000", //1.2_1
 	"tab.lastPinnedBorder": "#eeeeee", //2.3_0
@@ -571,10 +583,10 @@
 	"tab.unfocusedActiveBorderTop": "#0a80d1", //2.1_1
 	"tab.unfocusedActiveForeground": "#4aaeff", //4.1_3
 	"tab.unfocusedActiveModifiedBorder": "#0a80d1", //2.1_1
-	"tab.unfocusedHoverBackground": "#00000000", //1.2_1
+	"tab.unfocusedHoverBackground":  "#000000", //1.1_1
 	"tab.unfocusedHoverBorder": "#0a80d1", //2.1_1
 	"tab.unfocusedHoverForeground": "#4aaeff", //4.1_3
-	"tab.unfocusedInactiveBackground": "#00000000", //1.2_1
+	"tab.unfocusedInactiveBackground": "#000000a0", //1.1_0
 	"tab.unfocusedInactiveForeground": "#b0b0b0", //4.2_1
 	"tab.unfocusedInactiveModifiedBorder": "#00000000", //1.2_1
 // 终端 final
