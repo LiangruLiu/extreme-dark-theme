@@ -6,7 +6,7 @@
 	"keywords": ["black", "AMOLED", "dark", "night", "high-contrast", "theme", "vscode"],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
-	"version": "0.6.3",
+	"version": "0.6.4",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
@@ -33,12 +33,18 @@
 			"title": "Extreme Dark Theme",
 			"properties": {
 				"Extreme-Dark-Theme.Token Colors": {
-					"type": "string",
-					"default": "Original",
 					"markdownDescription": "Choose syntax highlighting color scheme. \n\n Under Development...",
+					"type": "string",
 					"enum": [
+						"ExtremeDark",
 						"Original",
 						"OneDarkPro"
+					],
+					"default": "Original",
+					"enumDescriptions": [
+						"ExtremeDark specific style (not recommended)",
+						"VSCode original dark theme style",
+						"OneDarkPro style (partially supported)"
 					]
 				}
 			}

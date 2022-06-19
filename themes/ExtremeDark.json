@@ -1,11 +1,11 @@
-// 20220519
+// 20220618
 {
 "$schema": "vscode://schemas/color-theme",
 "name": "extreme-dark-theme",
 "type": "dark",
+// "include": "./tokenColors_ExtremeDark.json",
    "include": "./tokenColors_Original.json",
 // "include": "./tokenColors_OneDarkPro.json",
-// "include": "./tokenColors_ExtremeDark.json",
 
 "colors": {
 	// "window.activeBorder":"#ffffff", // 调色用
@@ -285,6 +285,8 @@
 	"extensionIcon.preReleaseForeground": "#ffffff2a", //3.2_0
 	"extensionIcon.starForeground": "#b0b0b0", //4.2_1
 	"extensionIcon.verifiedForeground": "#4aaeff", //4.1_3 已认证扩展开发者的徽标
+	"extensionSponsorButton.background": "#ffffff2a", //3.2_0
+	"extensionSponsorButton.hoverBackground": "#00000000", //1.2_1
 	"focusBorder": "#ffd000a2", //I_0 or 透明蓝色
 	"foreground": "#ffffff", //4.1_1 欢迎界面，设置，左侧列表的部分文字，标签栏右侧按钮，等等
 	// 源代码管理
@@ -346,7 +348,7 @@
 	"list.inactiveSelectionBackground": "#646464c0", //3.1_1 激活后移开焦点
 	"list.inactiveSelectionForeground": "#ffffff", //4.1_1
 	"list.inactiveSelectionIconForeground": "#4aaeff", //4.1_3
-	"list.invalidItemForeground": "#00ffc8", //UNKWN
+	"list.invalidItemForeground": "#00ffc8", //TODO 工作区中文件夹不存在
 	"list.warningForeground": "#e68e42", //W.1
 	"listFilterWidget.background": "#ffffff2a", //3.2_0
 	"listFilterWidget.noMatchesOutline": "#ff566c", //E.1
@@ -615,6 +617,7 @@
 	"terminal.findMatchHighlightBorder": "#808080", //4.2_0
 	"terminal.foreground": "#dddddd", //4.1_0
 	"terminal.selectionBackground": "#ffffff30", //sel
+	"terminal.selectionForeground": "#00000000", //1.2_1 不改变
 	"terminal.tab.activeBorder": "#0a80d1", //2.1_1
 	"terminalCommandDecoration.defaultBackground": "#d0b127", //G 需启用ShellIntegration
 	"terminalCommandDecoration.errorBackground": "#ff5c67", //G

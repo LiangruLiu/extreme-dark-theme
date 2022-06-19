@@ -18,12 +18,18 @@ function overtype (filePath, cursorPos, content) {
 // 本函数通过切换注释实现
 exports.toggleTokenColors = function (colorSet) {
 	themeFilePath = path.join (__dirname, "../themes/ExtremeDark.json")  // 用__dirname获取当前模块的目录名
-	if (colorSet === "OneDarkPro") {
-		overtype (themeFilePath, 103, "//")
-		overtype (themeFilePath, 148, "  ")
-	} else if (colorSet === "Original") {
+	if        (colorSet === "ExtremeDark") {
 		overtype (themeFilePath, 103, "  ")
-		overtype (themeFilePath, 148, "//")
+		overtype (themeFilePath, 151, "//")
+		overtype (themeFilePath, 196, "//")
+	} else if (colorSet === "Original") {
+		overtype (themeFilePath, 103, "//")
+		overtype (themeFilePath, 151, "  ")
+		overtype (themeFilePath, 196, "//")
+	} else if (colorSet === "OneDarkPro") {
+		overtype (themeFilePath, 103, "//")
+		overtype (themeFilePath, 151, "//")
+		overtype (themeFilePath, 196, "  ")
 	} else {
 		console.log ("Name Error!")
 	}
