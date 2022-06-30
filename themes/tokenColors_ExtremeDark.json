@@ -18,37 +18,47 @@
 	"*.modification":   "#ff0000",
 	"*.readonly":       "#ff0000",
 	"*.static":         "#ff0000",
+	"class":            "#ff0000",
 	"class:python":     "#4bc89a",
 	"comment":          "#ff0000",
 	"decorator":        "#ff0000",
 	"enum":             "#ff0000",
 	"enumMember":       "#ff0000",
 	"event":            "#ff0000",
+	"function":         "#ff0000",
 	"function:python":  "#d7cc75",
 	"function:cpp":     "#d7cc75",
 	"function:c":       "#d7cc75",
 	"interface":        "#ff0000",
+	"keyword":          "#ff0000", //match-case
 	"keyword:python":   "#ffb476", //match-case
 	"label":            "#ff0000",
+	"macro":            "#ff0000",
 	"macro:cpp":        "#d7cc75",
 	"macro:c":          "#d7cc75",
+	"method":           "#ff0000",
 	"method:python":    "#d7cc75",
 	"method:cpp":       "#d7cc75",
+	"namespace":        "#ff0000",
 	"namespace:cpp":    "#4bc89a",
 	"number":           "#ff0000",
 	"operator":         "#ff0000",
+	"parameter":        "#ff0000",
 	"parameter:python": "#83a2ff",
 	"parameter:cpp":    "#83a2ff",
 	"parameter:c":      "#83a2ff",
+	"property":         "#ff0000",
 	"property:python":  "#83a2ff",
 	"property:cpp":     "#83a2ff",
 	"property:c":       "#83a2ff",
 	"regexp":           "#ff0000",
 	"string":           "#ff0000",
 	"struct":           "#ff0000",
+	"type":             "#ff0000",
 	"type:cpp":         "#4bc89a",
 	"type:c":           "#4bc89a",
 	"typeParameter":    "#ff0000",
+	"variable":         "#ff0000",
 	"variable:python":  "#59baff",
 	// Python
 	"*.builtin:python":         "#d7cc75",
@@ -77,8 +87,22 @@
 	"templateType:cpp":           "#ff00ff",
 	"valueType:cpp":              "#ff00ff",
 	// C
-	"*.global:c":               "#83a2ff",
-	"*.local:c":                "#59baff",
+	"*.global:c":                 "#83a2ff",
+	"*.local:c":                  "#59baff",
+	// Java
+	"*.constructor:java":       "#ff00ff",
+	"*.generic:java":           "#ff00ff",
+	"*.importDeclaration:java": "#ff00ff",
+	"*.native:java":            "#ff00ff",
+	"*.private:java":           "#ff00ff",
+	"*.protected:java":         "#ff00ff",
+	"*.public:java":            "#ff00ff",
+	"*.typeArgument:java":      "#ff00ff",
+	"annotation:java":          "#ff00ff",
+	"annotationMember:java":    "#ff00ff",
+	"modifier:java":            "#ff00ff",
+	"record:java":              "#ff00ff",
+	"recordComponent:java":     "#ff00ff",
 },
 
 "tokenColors": [
@@ -341,7 +365,7 @@
 		"scope": [
 			"constant.numeric.decimal.cpp",
 			"string.quoted.single.cpp",
-			"constant.character.escape",
+			"constant.character.escape.cpp",
 			"constant.other.placeholder",
 			"constant.language.true.cpp",
 			"constant.language.false.cpp",
@@ -551,7 +575,7 @@
 		"settings": {"foreground": "#e0e0e0"}
 	},
 	// #endregion
-	// #region Bat
+	// #region Batch
 	{
 		"name": "comment - head",
 		"scope": "keyword.command.rem.batchfile",
@@ -615,6 +639,79 @@
 		"name": "at",
 		"scope": "keyword.operator.at.batchfile",
 		"settings": {"foreground": "#acd37d"}
+	},
+	{
+		"name": "unrecognizable",
+		"scope": "source.batchfile",
+		"settings": {"foreground": "#dddddd"}
+	},
+	// #endregion
+	// #region Antlr
+	{
+		"name": "lexer - rule",
+		"scope": [
+			"entity.name.function.lexer.antlr",
+			"support.other.token.lexer.antlr",
+		],
+		"settings": {"foreground": "#59baff"}
+	},
+	{
+		"name": "parser - rule",
+		"scope": [
+			"entity.name.function.parser.antlr",
+			"support.function.parser.antlr",
+		],
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "lexer - string",
+		"scope": "string.quoted.single.antlr",
+		"settings": {"foreground": "#db86ec"}
+	},
+	{
+		"name": "lexer - esc",
+		"scope": "constant.character.escape.antlr",
+		"settings": {"foreground": "#ed83bf"}
+	},
+	{
+		"name": "lexer - char",
+		"scope": "constant.other.antlr",
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "regexp",
+		"scope": "string.regexp.antlr",
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "modifier",
+		"scope": [
+			"keyword.other.antlr",
+			"keyword.other.options.antlr",
+			"meta.options.block.antlr",
+			"entity.other.rule.option",
+			"entity.other.pointer.antlr",
+			"entity.name.function.antlr",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "parser - tag",
+		"scope": "entity.name.tag.antlr",
+		"settings": {"foreground": "#ffb476"}
+	},
+	{
+		"name": "separator",
+		"scope": [
+			"meta.rule.parser.antlr",
+			"meta.rule.lexer.antlr",
+		],
+		"settings": {"foreground": "#dddddd"}
+	},
+	{
+		"name": "unrecognizable",
+		"scope": "source.antlr",
+		"settings": {"foreground": "#dddddd"}
 	},
 	// #endregion
 
