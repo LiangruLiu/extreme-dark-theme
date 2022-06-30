@@ -1,4 +1,4 @@
-// 20220619
+// 20220630
 {
 "$schema": "vscode://schemas/color-theme",
 "semanticHighlighting": true,
@@ -26,10 +26,12 @@
 	"event":            "#ff0000",
 	"function:python":  "#d7cc75",
 	"function:cpp":     "#d7cc75",
+	"function:c":       "#d7cc75",
 	"interface":        "#ff0000",
-	"keyword":          "#ff0000",
+	"keyword:python":   "#ffb476", //match-case
 	"label":            "#ff0000",
 	"macro:cpp":        "#d7cc75",
+	"macro:c":          "#d7cc75",
 	"method:python":    "#d7cc75",
 	"method:cpp":       "#d7cc75",
 	"namespace:cpp":    "#4bc89a",
@@ -37,40 +39,46 @@
 	"operator":         "#ff0000",
 	"parameter:python": "#83a2ff",
 	"parameter:cpp":    "#83a2ff",
+	"parameter:c":      "#83a2ff",
 	"property:python":  "#83a2ff",
 	"property:cpp":     "#83a2ff",
+	"property:c":       "#83a2ff",
 	"regexp":           "#ff0000",
 	"string":           "#ff0000",
 	"struct":           "#ff0000",
 	"type:cpp":         "#4bc89a",
+	"type:c":           "#4bc89a",
 	"typeParameter":    "#ff0000",
 	"variable:python":  "#59baff",
 	// Python
-	"*.builtin":         "#d7cc75",
-	"*.decorator":       "#acd37d",
-	"*.typeHint":        "#4bc89a",
-	"*.typeHintComment": "#ff00ff",
-	"builtinConstant":   "#ff8091",
-	"clsParameter":      "#4bc89a",
-	"intrinsic":         "#ff00ff",
-	"magicFunction":     "#ffb476",
-	"module":            "#4bc89a",
-	"selfParameter":     "#4bc89a",
+	"*.builtin:python":         "#d7cc75",
+	"*.decorator:python":       "#acd37d",
+	"*.typeHint:python":        "#4bc89a",
+	"*.typeHintComment:python": "#ff00ff",
+	"builtinConstant:python":   "#ff8091",
+	"clsParameter:python":      "#4bc89a",
+	"intrinsic:python":         "#ff00ff",
+	"magicFunction:python":     "#ffb476",
+	"module:python":            "#4bc89a",
+	"selfParameter:python":     "#4bc89a",
 	// Cpp
-	"*.global":               "#ff00ff",
-	"*.local":                "#59baff",
-	"cliProperty":            "#ff00ff",
-	"customLiteral":          "#ff00ff",
-	"genericType":            "#ff00ff",
-	"memberOperatorOverload": "#ffb476",
-	"newOperator":            "#ff8091",
-	"numberLiteral":          "#ff00ff",
-	"operatorOverload":       "#ff00ff",
-	"referenceType":          "#ff00ff",
-	"stringLiteral":          "#ff00ff",
-	"templateFunction":       "#ff00ff",
-	"templateType":           "#ff00ff",
-	"valueType":              "#ff00ff",
+	"*.global:cpp":               "#83a2ff",
+	"*.local:cpp":                "#59baff",
+	"cliProperty:cpp":            "#ff00ff",
+	"customLiteral:cpp":          "#ff00ff",
+	"genericType:cpp":            "#ff00ff",
+	"memberOperatorOverload:cpp": "#ffb476",
+	"newOperator:cpp":            "#ff8091",
+	"numberLiteral:cpp":          "#ff00ff",
+	"operatorOverload:cpp":       "#ff00ff",
+	"referenceType:cpp":          "#ff00ff",
+	"stringLiteral:cpp":          "#ff00ff",
+	"templateFunction:cpp":       "#ff00ff",
+	"templateType:cpp":           "#ff00ff",
+	"valueType:cpp":              "#ff00ff",
+	// C
+	"*.global:c":               "#83a2ff",
+	"*.local:c":                "#59baff",
 },
 
 "tokenColors": [
@@ -96,6 +104,73 @@
 		"name": "value - string",
 		"scope": "string.quoted.double.json",
 		"settings": {"foreground": "#d8cb8e"}
+	},
+	// #endregion
+	// #region Markdown
+	{
+		"name": "text",
+		"scope": "meta.paragraph.markdown",
+		"settings": {"foreground": "#eeeeee"}
+	},
+	{
+		"name": "heading",
+		"scope": "markup.heading.markdown",
+		"settings": {"foreground": "#59baff",
+				"fontStyle": "bold"}
+	},
+	{
+		"name": "symbol",
+		"scope": "constant.character.entity.named.emsp.html",
+		"settings": {"foreground": "#acd37d"}
+	},
+	{
+		"name": "inline code",
+		"scope": "markup.inline.raw.string.markdown",
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "bold",
+		"scope": "markup.bold.markdown",
+		"settings": {"foreground": "#ff8091",
+			"fontStyle": "bold"}
+	},
+	{
+		"name": "link frame",
+		"scope": [
+			"punctuation.definition.link.description.begin.markdown",
+			"punctuation.definition.link.description.end.markdown",
+			"punctuation.definition.metadata.markdown",
+		],
+		"settings": {"foreground": "#707070"}
+	},
+	{
+		"name": "link description",
+		"scope": "string.other.link.description.markdown",
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "link body",
+		"scope": "markup.underline.link.image.markdown",
+		"settings": {"foreground": "#b0b0b0"}
+	},
+	{
+		"name": "html tag",
+		"scope": [
+			"punctuation.definition.tag.begin.html",
+			"entity.name.tag.html",
+			"punctuation.definition.tag.end.html",
+		],
+		"settings": {"foreground": "#acd37d"}
+	},
+	{
+		"name": "separator",
+		"scope": "meta.separator.markdown",
+		"settings": {"foreground": "#59baff"}
+	},
+	{
+		"name": "list",
+		"scope": "punctuation.definition.list.begin.markdown",
+		"settings": {"foreground": "#59baff"}
 	},
 	// #endregion
 	// #region Python
@@ -179,6 +254,7 @@
 			"punctuation.separator.period.python",
 			"punctuation.separator.slice.python",
 			"keyword.operator.unpacking.arguments.python",
+			"keyword.operator.unpacking.parameter.python",
 		],
 		"settings": {"foreground": "#59baff"}
 	},
@@ -241,6 +317,7 @@
 			"keyword.control.if.cpp",
 			"keyword.control.else.cpp",
 			"keyword.control.for.cpp",
+			"keyword.control.do.cpp",
 			"keyword.control.while.cpp",
 			"keyword.control.break.cpp",
 			"keyword.control.continue.cpp",
@@ -265,6 +342,7 @@
 			"constant.numeric.decimal.cpp",
 			"string.quoted.single.cpp",
 			"constant.character.escape",
+			"constant.other.placeholder",
 			"constant.language.true.cpp",
 			"constant.language.false.cpp",
 			"constant.language.nullptr.cpp",
@@ -321,6 +399,222 @@
 			"variable.parameter.preprocessor.cpp",
 		],
 		"settings": {"foreground": "#83a2ff"}
+	},
+	// #endregion
+	// #region C
+	{
+		"name": "keyword - import",
+		"scope": [
+			"keyword.control.directive.include.c",
+		],
+		"settings": {"foreground": "#59baff"}
+	},
+	{
+		"name": "module",
+		"scope": [
+			"string.quoted.other.lt-gt.include.c",
+			"string.quoted.double.include.c",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "keyword - type and modifier",
+		"scope": [
+			"storage.type.built-in.primitive.c",
+		],
+		"settings": {"foreground": "#acd37d"}
+	},
+	{
+		"name": "keyword - control",
+		"scope": [
+			"keyword.control.c",
+		],
+		"settings": {"foreground": "#ffb476"}
+	},
+	{
+		"name": "keyword - define",
+		"scope": [
+			"keyword.control.directive.define.c",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "constant - num / - char / - esc / - builtin",
+		"scope": [
+			"constant.numeric.decimal.c",
+			"string.quoted.single.c",
+			"constant.character.escape.c",
+			"constant.other.placeholder.c",
+			"constant.language.c",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "constant - str",
+		"scope": [
+			"string.quoted.double.c",
+		],
+		"settings": {"foreground": "#db86ec"}
+	},
+	{
+		"name": "punctuation - member",
+		"scope": [
+			"punctuation.separator.dot-access.c",
+			"punctuation.separator.pointer-access.c",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "punctuation - operation and assignment",
+		"scope": [
+			"keyword.operator.c",
+			"keyword.operator.increment.c",
+			"keyword.operator.decrement.c",
+			"keyword.operator.assignment.c",
+			"keyword.operator.assignment.compound.c",
+		],
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "punctuation - comparison and logical",
+		"scope": [
+			"keyword.operator.comparison.c",
+			"keyword.operator.logical.c",
+		],
+		"settings": {"foreground": "#ffb476"}
+	},
+	{
+		"name": "punctuation - separator",
+		"scope": [
+			"punctuation.separator.delimiter.c",
+			"punctuation.terminator.statement.c",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "parameter in macro",
+		"scope": [
+			"variable.parameter.preprocessor.c",
+		],
+		"settings": {"foreground": "#83a2ff"}
+	},
+	// #endregion
+	// #region Asm (MASM)
+	{
+		"name": "comment",
+		"scope": "comment.line.asm",
+		"settings": {"foreground": "#707070"}
+	},
+	{
+		"name": "function",
+		"scope": "entity.name.function.asm",
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "type",
+		"scope": [
+			"keyword.control.asm",
+			"support.type.register.z80.asm",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "keyword",
+		"scope": [
+			"keyword.mnemonic.x86.asm",
+			"keyword.mnemonic.z80.asm",
+			"keyword.mnemonic.z80n.asm",
+		],
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "string",
+		"scope": "string.quoted.double.asm",
+		"settings": {"foreground": "#db86ec"}
+	},
+	{
+		"name": "number",
+		"scope": [
+			"constant.numeric.integer.decimal.asm",
+			"constant.numeric.integer.hexadecimal.asm",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "variable",
+		"scope": "variable.parameter.label.asm",
+		"settings": {"foreground": "#59baff"}
+	},
+	{
+		"name": "others",
+		"scope": "source.asm",
+		"settings": {"foreground": "#e0e0e0"}
+	},
+	// #endregion
+	// #region Bat
+	{
+		"name": "comment - head",
+		"scope": "keyword.command.rem.batchfile",
+		"settings": {"foreground": "#b0b0b0"}
+	},
+	{
+		"name": "parameter",
+		"scope": "variable.parameter.batchfile",
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "variable",
+		"scope": "variable.other.readwrite.batchfile",
+		"settings": {"foreground": "#59baff"}
+	},
+	{
+		"name": "keyword - control",
+		"scope": [
+			"keyword.control.conditional.batchfile",
+			"keyword.operator.comparison.batchfile",
+			"keyword.operator.logical.batchfile",
+			"keyword.control.statement.batchfile",
+		],
+		"settings": {"foreground": "#ffb476"}
+	},
+	{
+		"name": "builtin function",
+		"scope": [
+			"keyword.command.batchfile",
+			"keyword.other.special-method.batchfile",
+		],
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "assignment",
+		"scope": "keyword.operator.assignment.batchfile",
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "constant - num / constant - esc",
+		"scope": [
+			"constant.numeric.batchfile",
+			"constant.character.escape.batchfile",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "string",
+		"scope": "string.quoted.double.batchfile",
+		"settings": {"foreground": "#db86ec"}
+	},
+	{
+		"name": "separator",
+		"scope": [
+			"keyword.operator.conditional.batchfile",
+			"keyword.operator.pipe.batchfile",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "at",
+		"scope": "keyword.operator.at.batchfile",
+		"settings": {"foreground": "#acd37d"}
 	},
 	// #endregion
 
