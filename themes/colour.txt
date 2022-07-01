@@ -1,3 +1,5 @@
+# 界面元素：
+
 /*
 1:背景  2:边线  3:色块  4:文字  A:功能性  .:层次  _:标准(0为非标)
 or:可选  del:需删除  unkwn:功能未知  final:最终版  bug:有不合设计理念的错误
@@ -75,3 +77,52 @@ E:error  W:warning  I:info  G:group  O:other
 	悬停用主题色，选中用亮白色，对于不区分二者的控件，采用白色。
 7. 若悬/选导致看不清文字，会设计成平/悬为亮，而悬/选反而恢复黑；
 	若层层加亮，在中心反而设为暗。
+
+
+# 代码着色：
+
+"#ff8091"
+"#ffb476"
+"#d7cc75"
+"#acd37d"
+"#82cb6b"
+"#4bc89a"
+"#59baff"
+"#83a2ff"
+"#db86ec"
+
+
+# 待办插件：
+
+"todo-tree.highlights.customHighlight": {
+	// https://primer.style/octicons/
+	"XXX": {
+		"icon": "package" //three-bars
+	},
+	"TODO": {
+		"icon": "check-circle",
+		"iconColour": "#7bc26a",
+		"background": "#7bc26aa0"
+	},
+	"BUG": {
+		"icon": "bug", //$(bug)
+		"iconColour": "#ff736e",
+		"background": "#ff736ea0"
+	},
+	"FIXME": {
+		"icon": "flame",
+		"iconColour": "#dac259",
+		"background": "#dac259a0"
+	},
+	"UNKWN": {
+		"icon": "question",
+		"iconColour": "#e18ae4",
+		"background": "#e18ae4a0"
+	},
+	"MODIFIED": {
+		"icon": "pencil",
+		"iconColour": "#62a6ff",
+		"background": "#62a6ffa0",
+		"gutterIcon": true
+	},
+},

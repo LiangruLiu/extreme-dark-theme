@@ -11,38 +11,6 @@ set
 设置中的Snippet Suggestions
 还差一些sel需要修改
 
-"todo-tree.highlights.customHighlight": {
-	// https://primer.style/octicons/
-	"XXX": {
-		"icon": "package" //three-bars
-	},
-	"TODO": {
-		"icon": "check-circle",
-		"iconColour": "#7bc26a",
-		"background": "#7bc26aa0"
-	},
-	"BUG": {
-		"icon": "bug", //$(bug)
-		"iconColour": "#ff736e",
-		"background": "#ff736ea0"
-	},
-	"FIXME": {
-		"icon": "flame",
-		"iconColour": "#dac259",
-		"background": "#dac259a0"
-	},
-	"UNKWN": {
-		"icon": "question",
-		"iconColour": "#e18ae4",
-		"background": "#e18ae4a0"
-	},
-	"MODIFIED": {
-		"icon": "pencil",
-		"iconColour": "#62a6ff",
-		"background": "#62a6ffa0",
-		"gutterIcon": true
-	},
-},
 
 可从命令面板中调出的工具：
 Reload Window 可以重新加载窗口以应用插件代码更新

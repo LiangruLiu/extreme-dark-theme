@@ -1,4 +1,4 @@
-// 20220630
+// 20220701
 {
 "$schema": "vscode://schemas/color-theme",
 "semanticHighlighting": true,
@@ -10,56 +10,68 @@
 // https://code.visualstudio.com/api/language-extensions/semantic-highlight-guide#predefined-textmate-scope-mappings
 "semanticTokenColors": {
 	// Universal
-	"*.abstract":       "#ff0000",
-	"*.async":          "#ff0000",
-	"*.declaration":    "#ff0000",
-	"*.deprecated":     "#ff0000",
-	"*.documentation":  "#ff0000",
-	"*.modification":   "#ff0000",
-	"*.readonly":       "#ff0000",
-	"*.static":         "#ff0000",
-	"class":            "#ff0000",
-	"class:python":     "#4bc89a",
-	"comment":          "#ff0000",
-	"decorator":        "#ff0000",
-	"enum":             "#ff0000",
-	"enumMember":       "#ff0000",
-	"event":            "#ff0000",
-	"function":         "#ff0000",
-	"function:python":  "#d7cc75",
-	"function:cpp":     "#d7cc75",
-	"function:c":       "#d7cc75",
-	"interface":        "#ff0000",
-	"keyword":          "#ff0000", //match-case
-	"keyword:python":   "#ffb476", //match-case
-	"label":            "#ff0000",
-	"macro":            "#ff0000",
-	"macro:cpp":        "#d7cc75",
-	"macro:c":          "#d7cc75",
-	"method":           "#ff0000",
-	"method:python":    "#d7cc75",
-	"method:cpp":       "#d7cc75",
-	"namespace":        "#ff0000",
-	"namespace:cpp":    "#4bc89a",
-	"number":           "#ff0000",
-	"operator":         "#ff0000",
-	"parameter":        "#ff0000",
-	"parameter:python": "#83a2ff",
-	"parameter:cpp":    "#83a2ff",
-	"parameter:c":      "#83a2ff",
-	"property":         "#ff0000",
-	"property:python":  "#83a2ff",
-	"property:cpp":     "#83a2ff",
-	"property:c":       "#83a2ff",
-	"regexp":           "#ff0000",
-	"string":           "#ff0000",
-	"struct":           "#ff0000",
-	"type":             "#ff0000",
-	"type:cpp":         "#4bc89a",
-	"type:c":           "#4bc89a",
-	"typeParameter":    "#ff0000",
-	"variable":         "#ff0000",
-	"variable:python":  "#59baff",
+	"*.abstract":             "#ff0000",
+	"*.async":                "#ff0000",
+	"*.declaration":          "#ff0000",
+	"*.deprecated":           "#ff0000",
+	"*.documentation":        "#ff0000",
+	"*.modification":         "#ff0000",
+	"*.readonly":             "#ff0000",
+	"*.static":               "#ff0000",
+	"class":                  "#ff0000",
+	"class:python":           "#4bc89a",
+	"class:java":             "#4bc89a",
+	"comment":                "#ff0000",
+	"decorator":              "#ff0000",
+	"enum":                   "#ff0000",
+	"enumMember":             "#ff0000",
+	"event":                  "#ff0000",
+	"function":               "#ff0000",
+	"function:python":        "#d7cc75",
+	"function:cpp":           "#d7cc75",
+	"function:c":             "#d7cc75",
+	"function:javascript":    "#d7cc75",
+	"interface":              "#ff0000",
+	"interface:java":         "#4bc89a",
+	"keyword":                "#ff0000",
+	"keyword:python":         "#ffb476", //match-case
+	"label":                  "#ff0000",
+	"macro":                  "#ff0000",
+	"macro:cpp":              "#d7cc75",
+	"macro:c":                "#d7cc75",
+	"method":                 "#ff0000",
+	"method:python":          "#d7cc75",
+	"method:cpp":             "#d7cc75",
+	"method:java":            "#d7cc75",
+	"method:javascript":      "#d7cc75",
+	"namespace":              "#ff0000",
+	"namespace:cpp":          "#4bc89a",
+	"namespace:java":         "#4bc89a",
+	"namespace:javascript":   "#4bc89a",
+	"number":                 "#ff0000",
+	"operator":               "#ff0000",
+	"parameter":              "#ff0000",
+	"parameter:python":       "#83a2ff",
+	"parameter:cpp":          "#83a2ff",
+	"parameter:c":            "#83a2ff",
+	"parameter:java":         "#83a2ff",
+	"parameter:javascript":   "#83a2ff",
+	"property":               "#ff0000",
+	"property:python":        "#83a2ff",
+	"property:cpp":           "#83a2ff",
+	"property:c":             "#83a2ff",
+	"property:java":          "#83a2ff",
+	"regexp":                 "#ff0000",
+	"string":                 "#ff0000",
+	"struct":                 "#ff0000",
+	"type":                   "#ff0000",
+	"type:cpp":               "#4bc89a",
+	"type:c":                 "#4bc89a",
+	"typeParameter":          "#ff0000",
+	"variable":               "#ff0000",
+	"variable:python":        "#59baff",
+	"variable:java":          "#59baff",
+	"variable:javascript":    "#59baff",
 	// Python
 	"*.builtin:python":         "#d7cc75",
 	"*.decorator:python":       "#acd37d",
@@ -90,22 +102,23 @@
 	"*.global:c":                 "#83a2ff",
 	"*.local:c":                  "#59baff",
 	// Java
-	"*.constructor:java":       "#ff00ff",
-	"*.generic:java":           "#ff00ff",
-	"*.importDeclaration:java": "#ff00ff",
-	"*.native:java":            "#ff00ff",
-	"*.private:java":           "#ff00ff",
-	"*.protected:java":         "#ff00ff",
-	"*.public:java":            "#ff00ff",
-	"*.typeArgument:java":      "#ff00ff",
+	// "*.constructor:java":       "#ff00ff",
+	// "*.generic:java":           "#ff00ff",
+	// "*.importDeclaration:java": "#ff00ff",
+	// "*.native:java":            "#ff00ff",
+	// "*.private:java":           "#ff00ff",
+	// "*.protected:java":         "#ff00ff",
+	// "*.public:java":            "#ff00ff",
+	// "*.typeArgument:java":      "#ff00ff",
 	"annotation:java":          "#ff00ff",
 	"annotationMember:java":    "#ff00ff",
-	"modifier:java":            "#ff00ff",
+	"modifier:java":            "#82cb6b",
 	"record:java":              "#ff00ff",
 	"recordComponent:java":     "#ff00ff",
 },
 
 "tokenColors": [
+	// settings.fontStyle: bold, italic, underline
 	// #region Universal
 	{
 		"name": "comment - body",
@@ -333,7 +346,7 @@
 			"storage.modifier.specifier.functional.pre-parameters.friend.cpp",
 			"storage.modifier.specifier.functional.post-parameters.const.cpp",
 		],
-		"settings": {"foreground": "#acd37d"}
+		"settings": {"foreground": "#82cb6b"}
 	},
 	{
 		"name": "keyword - control",
@@ -446,7 +459,7 @@
 		"scope": [
 			"storage.type.built-in.primitive.c",
 		],
-		"settings": {"foreground": "#acd37d"}
+		"settings": {"foreground": "#82cb6b"}
 	},
 	{
 		"name": "keyword - control",
@@ -521,6 +534,151 @@
 			"variable.parameter.preprocessor.c",
 		],
 		"settings": {"foreground": "#83a2ff"}
+	},
+	// #endregion
+	// #region Java
+	{
+		"name": "keyword - import",
+		"scope": [
+			"keyword.other.import.java",
+		],
+		"settings": {"foreground": "#59baff"}
+	},
+	{
+		"name": "module and keyword this in class",
+		"scope": [
+			"variable.language.this.java",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "keyword - type and modifier",
+		"scope": [
+			"storage.type.primitive.java",
+			"storage.type.primitive.array.java",
+		],
+		"settings": {"foreground": "#82cb6b"}
+	},
+	{
+		"name": "keyword - control",
+		"scope": [
+			"keyword.control.java",
+		],
+		"settings": {"foreground": "#ffb476"}
+	},
+	{
+		"name": "keyword - define",
+		"scope": [
+			"storage.modifier.java",
+			"keyword.control.new.java",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "constant - num / - char / - esc / - builtin",
+		"scope": [
+			"constant.numeric.decimal.java",
+			"string.quoted.single.java",
+			"constant.character.escape.java",
+			"constant.language.java",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "constant - str",
+		"scope": [
+			"string.quoted.double.java",
+		],
+		"settings": {"foreground": "#db86ec"}
+	},
+	{
+		"name": "punctuation - member",
+		"scope": [
+			"punctuation.separator.period.java",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "punctuation - operation and assignment",
+		"scope": [
+			"keyword.operator.arithmetic.java",
+			"keyword.operator.increment-decrement.java",
+			"keyword.operator.assignment.java",
+			"keyword.operator.assignment.arithmetic.java",
+		],
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "punctuation - comparison and logical",
+		"scope": [
+			"keyword.operator.comparison.java",
+			"keyword.operator.logical.java",
+		],
+		"settings": {"foreground": "#ffb476"}
+	},
+	{
+		"name": "punctuation - separator",
+		"scope": [
+			"punctuation.terminator.java",
+			"punctuation.separator.delimiter.java",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	// #endregion
+	// #region JavaScript
+	{
+		"name": "define",
+		"scope": [
+			"storage.type.js",
+			"storage.type.function.js",
+		],
+		"settings": {"foreground": "#82cb6b"}
+	},
+	{
+		"name": "keyword - control",
+		"scope": [
+			"keyword.control.conditional.js",
+		],
+		"settings": {"foreground": "#ffb476"}
+	},
+	{
+		"name": "constant - num / - char / - esc / - builtin",
+		"scope": [
+			"constant.numeric.decimal.js",
+			"string.quoted.single.js",
+			"constant.character.escape.js",
+			"constant.language.boolean.true.js",
+			"constant.language.boolean.false.js",
+		],
+		"settings": {"foreground": "#ff8091"}
+	},
+	{
+		"name": "constant - str",
+		"scope": [
+			"string.quoted.double.js",
+		],
+		"settings": {"foreground": "#db86ec"}
+	},
+	{
+		"name": "module",
+		"scope": [
+			"support.type.object.module.js",
+		],
+		"settings": {"foreground": "#4bc89a"}
+	},
+	{
+		"name": "function",
+		"scope": [
+			"entity.name.function.js",
+		],
+		"settings": {"foreground": "#d7cc75"}
+	},
+	{
+		"name": "variable",
+		"scope": [
+			"variable.other.readwrite.js",
+		],
+		"settings": {"foreground": "#59baff"}
 	},
 	// #endregion
 	// #region Asm (MASM)
@@ -713,263 +871,6 @@
 		"scope": "source.antlr",
 		"settings": {"foreground": "#dddddd"}
 	},
-	// #endregion
-
-
-	// #region Old
-	// //fontStyle:bold,italic,underline
-	// //comment
-	// {
-	// 	"name": "comment",
-	// 	"scope": "comment",
-	// 	"settings": {"foreground": "#666666"}
-	// },
-	// {
-	// 	"name": "//",
-	// 	"scope": "punctuation.definition.comment",
-	// 	"settings": {"foreground": "#bababa"}
-	// },
-	// //constant
-	// {
-	// 	"name": "constant",
-	// 	"scope": "constant.numeric",
-	// 	"settings": {"foreground": "#fd7272"}
-	// },
-	// {
-	// 	"name": "booleans and null values |true,false,null",
-	// 	"scope": "constant.language",
-	// 	"settings": {"foreground": "#ff7272"}
-	// },
-	// {
-	// 	"name": " |\n",
-	// 	"scope": "constant.character.escape",
-	// 	"settings": {"foreground": "#eea777"}
-	// },
-	// {
-	// 	"name": " |%d",
-	// 	"scope": "constant.other.placeholder",
-	// 	"settings": {"foreground": "#e4e47d"}
-	// },
-	// //entity
-	// {
-	// 	"name": "entity name |struct 'cplx'",
-	// 	"scope": "entity.name.type",
-	// 	"settings": {"foreground": "#aec265"}
-	// },
-	// {
-	// 	"name": "???",
-	// 	"scope": "entity.name.struct",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": "function name |void 'fun'(), define 'PI'",
-	// 	"scope": "entity.name.function",
-	// 	"settings": {"foreground": "#78bdfd"}
-	// },
-	// {
-	// 	"name": "???",
-	// 	"scope": "entity.name.struct.forward-decl",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": "namespace name |using namespace 'std'",
-	// 	"scope": "entity.name.namespace",
-	// 	"settings": {"foreground": "#c9c239"}
-	// },
-	// {
-	// 	"name": "???",
-	// 	"scope": "entity.name.constant",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": " |goto 'A'",
-	// 	"scope": "entity.name.label",
-	// 	"settings": {"foreground": "#fd7272"}
-	// },
-	// //invalid
-	// {
-	// 	"name": "invalid",
-	// 	"scope": "invalid.illegal",
-	// 	"settings": {"foreground": "#ffffff"}
-	// },
-	// // keyword
-	// {
-	// 	"name": " |using,typedef",
-	// 	"scope": "keyword",
-	// 	"settings": {"foreground": "#6edfd5"}
-	// },
-	// {
-	// 	"name": " |#include,#define,return,while,for,if,switch,goto",
-	// 	"scope": "keyword.control",
-	// 	"settings": {"foreground": "#dac15f"}
-	// },
-	// {
-	// 	"name": "???",
-	// 	"scope": "keyword.control.conditional",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": "operator",
-	// 	"scope": "keyword.operator",
-	// 	"settings": {"foreground": "#cf8be6"}
-	// },
-	// {
-	// 	"name": "assignment operator |=",
-	// 	"scope": "keyword.operator.assignment",
-	// 	"settings": {"foreground": "#dac15f"}
-	// },
-	// {
-	// 	"name": "???",
-	// 	"scope": "keyword.operator.arithmetic",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": "???",
-	// 	"scope": "keyword.operator.bitwise",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": "logical operator |&&",
-	// 	"scope": "keyword.operator.logical",
-	// 	"settings": {"foreground": "#dac15f"}
-	// },
-	// // markup
-	// // meta
-	// {
-	// 	"name": "???",
-	// 	"scope": "meta.struct",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": "null, (..) after fun,main,scanf,putchar, [..]after array",
-	// 	"scope": "meta.function",
-	// 	"settings": {"foreground": "#d8d8d8"}//78bdfd
-	// },
-	// {
-	// 	"name": "|#define LOOP'(i,n)'",
-	// 	"scope": "meta.preprocessor",
-	// 	"settings": {"foreground": "#7ab867"}
-	// },
-	// {
-	// 	"name": "{}",
-	// 	"scope": "punctuation.section.block",
-	// 	"settings": {"foreground": "#808080"}
-	// },
-	// {
-	// 	"name": " |() after while,for,if,switch, () in equation",
-	// 	"scope": "punctuation.section.parens",
-	// 	"settings": {"foreground": "#dac15f"}
-	// },
-	// // {
-	// // 	"name": "search editor",
-	// // 	"scope": "meta.path.basename.search",
-	// // 	"settings": {"foreground": "#dac15f"}
-	// // },
-	// // punctuation
-	// {
-	// 	"name": "separator |,.:",
-	// 	"scope": "punctuation.separator",
-	// 	"settings": {"foreground": "#eaeaea"}
-	// },
-	// {
-	// 	"name": "terminator |;",
-	// 	"scope": "punctuation.terminator",
-	// 	"settings": {"foreground": "#ffffff"}
-	// },
-	// {
-	// 	"name": "???accessor |.->::",
-	// 	"scope": "punctuation.accessor",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// // source
-	// {
-	// 	"name": "global variable in .ano",
-	// 	"scope": "source.cpp.arduino",
-	// 	"settings": {"foreground": "#d8d8d8"}
-	// },
-	// // storage
-	// {
-	// 	"name": "type of data |int",
-	// 	"scope": "storage.type",
-	// 	"settings": {"foreground": "#7ab867"}
-	// },
-	// {
-	// 	"name": " |static,inline,const,public,private",
-	// 	"scope": "storage.modifier",
-	// 	"settings": {"foreground": "#c9c239",
-	// 		"fontStyle": "bold"}
-	// },
-	// {
-	// 	"name": "???",
-	// 	"scope": "storage.type.function",
-	// 	"settings": {"foreground": "#ff00dd"}
-	// },
-	// {
-	// 	"name": " |class,struct,enum,union",
-	// 	"scope": [
-	// 		"storage.type.class",
-	// 		"storage.type.struct",
-	// 		"storage.type.enum",
-	// 		"storage.type.union"
-	// 	],
-	// 	"settings": {"foreground": "#c9c239"}
-	// },
-	// // string
-	// {
-	// 	"name": "key string in json",
-	// 	"scope": "string.json",
-	// 	"settings": {"foreground": "#78bdfd"}
-	// },
-	// {
-	// 	"name": "value string in json",
-	// 	"scope": "string.quoted.double.json",
-	// 	"settings": {"foreground": "#d6d6d6"}
-	// },
-	// {
-	// 	"name": "char",
-	// 	"scope": "string.quoted.single",
-	// 	"settings": {"foreground": "#fd7272"}
-	// },
-	// {
-	// 	"name": "string",
-	// 	"scope": "string.quoted.double",
-	// 	"settings": {"foreground": "#efc48c"}
-	// },
-	// {
-	// 	"name": " |include <'iostream'>",
-	// 	"scope": "string.quoted.other",
-	// 	"settings": {"foreground": "#d8d8d8"}
-	// },
-	// {
-	// 	"name": "quotes",
-	// 	"scope": "punctuation.definition.string",
-	// 	"settings": {"foreground": "#c7c7c7"}
-	// },
-	// // support
-	// // text
-	// {
-	// 	"name": "markdown",
-	// 	"scope": "text",
-	// 	"settings": {"foreground": "#e0e0e0"}
-	// },
-	// // variable
-	// {
-	// 	"name": "variable",
-	// 	"scope": [
-	// 		"variable.other",
-	// 		"variable.other.readwrite",
-	// 		"punctuation.definition.variable",
-	// 		"variable.other.constant",
-	// 		"variable.language",
-	// 		"variable.parameter",
-	// 		"variable.other.member",
-	// 		"variable.function",
-	// 		"variable.annotation",
-	// 		"punctuation.definition.annotation",
-	// 		"entity.name.variable"
-	// 	],
-	// 	"settings": {"foreground": "#94dbfc"}
-	// }
 	// #endregion
 ]
 }
