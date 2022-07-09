@@ -1,4 +1,4 @@
-<!--20220426-->
+<!--20220709-->
 <span id="jump-begin"/> <h1 align="center"> Extreme Dark Theme </h1>
 
 <div align=center>
@@ -87,7 +87,7 @@
 ## Screenshot
 
 <!-- <span id="jump-pic"/> [![Screenshot](https://z3.ax1x.com/2021/05/12/g0G5U1.png)](https://imgtu.com/i/g0G5U1) -->
-<span id="jump-pic"/> [![Screenshot](https://liangruliu.github.io/images/screenshot.png)](https://liangruliu.github.io/images/screenshot.png)
+<span id="jump-pic"/> [![Screenshot](https://liangruliu.github.io/images/vscodeExt/EDT_screenshot.png)](https://liangruliu.github.io/images/vscodeExt/EDT_screenshot.png)
 
 
 ## Introduction
@@ -141,5 +141,5 @@
 -----
 <!-- <p align="center"> Visual Studio Marketplace </p> -->
 <div align=center> <a href="#jump-begin">
-   <img src="https://liangruliu.github.io/images/icon_small.png" width="32pt">
+   <img src="https://liangruliu.github.io/images/vscodeExt/icon-small.png" width="32pt">
 </a> </div>

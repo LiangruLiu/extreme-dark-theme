@@ -1,4 +1,4 @@
-// 20220701
+// 20220707
 {
 "$schema": "vscode://schemas/color-theme",
 "semanticHighlighting": true,
@@ -240,6 +240,7 @@
 			"constant.numeric.dec.python",
 			"constant.numeric.float.python",
 			"constant.character.escape.python",
+			"constant.character.format.placeholder.other.python",
 			"storage.type.format.python",
 		],
 		"settings": {"foreground": "#ff8091"}
@@ -638,6 +639,9 @@
 		"name": "keyword - control",
 		"scope": [
 			"keyword.control.conditional.js",
+			"keyword.control.loop.js",
+			"keyword.operator.expression.in.js",
+			"keyword.operator.expression.of.js",
 		],
 		"settings": {"foreground": "#ffb476"}
 	},
@@ -647,6 +651,8 @@
 			"constant.numeric.decimal.js",
 			"string.quoted.single.js",
 			"constant.character.escape.js",
+			"punctuation.definition.template-expression.begin.js",
+			"punctuation.definition.template-expression.end.js",
 			"constant.language.boolean.true.js",
 			"constant.language.boolean.false.js",
 		],
@@ -656,6 +662,7 @@
 		"name": "constant - str",
 		"scope": [
 			"string.quoted.double.js",
+			"string.template.js",
 		],
 		"settings": {"foreground": "#db86ec"}
 	},

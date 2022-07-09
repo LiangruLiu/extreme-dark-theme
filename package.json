@@ -3,12 +3,12 @@
 	"displayName": "Extreme Dark Theme",
 	"description": "A dark theme for VS Code made by LLR",
 	"categories": ["Themes"],
-	"keywords": ["black", "AMOLED", "dark", "night", "high-contrast", "theme", "vscode"],
+	"keywords": ["black", "AMOLED", "dark", "night", "high-contrast", "theme"],
 	"publisher": "liangruliu",
 	"icon": "images/icon.png",
-	"version": "0.6.5",
+	"version": "0.6.6",
 	"engines": {
-		"vscode": "^1.56.0"
+		"vscode": "^1.60.0"
 	},
 	"capabilities": {
 		"untrustedWorkspaces": {
@@ -32,7 +32,7 @@
 			"type": "object",
 			"title": "Extreme Dark Theme",
 			"properties": {
-				"Extreme-Dark-Theme.Token Colors": {
+				"ExtremeDarkTheme.tokenColors": {
 					"markdownDescription": "Choose syntax highlighting color scheme. \n\n Under Development...",
 					"type": "string",
 					"enum": [
@@ -40,18 +40,18 @@
 						"Original",
 						"OneDarkPro"
 					],
-					"default": "Original",
 					"enumDescriptions": [
 						"ExtremeDark specific style (not recommended)",
 						"VSCode original dark theme style",
 						"OneDarkPro style (partially supported)"
-					]
+					],
+					"default": "Original"
 				}
 			}
 		},
 		"commands": [
 			{
-				"command": "extension.HiLLR",
+				"command": "extension.hi-llr",
 				"title": "HiLLR (hello world)"
 			}
 		]
